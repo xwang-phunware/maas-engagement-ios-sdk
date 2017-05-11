@@ -1,5 +1,5 @@
 //
-//  LPMapAnnotation.h
+//  MapAnnotation.h
 //  LocalpointSample
 //
 //  Created on 9/24/14.
@@ -9,7 +9,7 @@
 #import <PWEngagement/PWEngagement.h>
 #import <MapKit/MapKit.h>
 
-@interface LPMapAnnotation : MKPointAnnotation
+@interface MapAnnotation : MKPointAnnotation
 
 @property (nonatomic, strong) id<PWMEZone> zone;
 

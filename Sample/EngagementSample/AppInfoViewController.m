@@ -61,8 +61,8 @@ static NSString *const MaxMonitorRegionRadius = @"50,000";
         self.numberOfMessages.text = [NSString stringWithFormat:@"%lu", (long)[[PWEngagement messages] count]];
         
         NSArray *locations = [PWEngagement geozones];
-        NSArray *monitoredZones = [PWEngagement monitoredGeozones];
-        NSArray *insideZones = [PWEngagement insideGeozones];
+        NSArray *monitoredZones = [PWEngagement monitoredZones];
+        NSArray *insideZones = [PWEngagement insideZones];
         
         self.numberOfZones.text = [NSString stringWithFormat:@"%lu", (unsigned long)[locations count]];
         self.numberOfMonitoredZones.text = [NSString stringWithFormat:@"%lu", (unsigned long)[monitoredZones count]];

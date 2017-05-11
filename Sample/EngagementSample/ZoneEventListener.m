@@ -1,5 +1,5 @@
 //
-//  LPZoneEventListener.m
+//  ZoneEventListener.m
 
 //
 //  Created on 4/20/15.
@@ -8,11 +8,11 @@
 
 #import <PWEngagement/PWEngagement.h>
 
-#import "LPZoneEventListener.h"
+#import "ZoneEventListener.h"
 #import "PubUtils.h"
 #import "AppSettingsDataSource.h"
 
-@implementation LPZoneEventListener
+@implementation ZoneEventListener
 
 #pragma mark - Public methods
 

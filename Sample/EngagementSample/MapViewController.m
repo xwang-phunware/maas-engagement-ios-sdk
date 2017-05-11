@@ -9,7 +9,7 @@
 #import "PWEngagement+Helper.h"
 #import "MapViewController.h"
 #import <MapKit/MapKit.h>
-#import "LPMapAnnotation.h"
+#import "MapAnnotation.h"
 #import "ZoneDetailsViewController.h"
 
 static NSString * kSAMonitoredInsideRegionCircle = @"SAMonitoredInsideRegionCircle";
@@ -80,9 +80,9 @@ static NSString * kSANonMonitoredRegionCircle = @"SANonMonitoredRegionCircle";
             
             NSMutableArray *overlaysToAdd = @[].mutableCopy;
             
-            self.monitoredLocation = [NSSet setWithArray:[PWEngagement monitoredGeozones]];
+            self.monitoredLocation = [NSSet setWithArray:[PWEngagement monitoredZones]];
             
-            NSArray *coreLocationMonitoredRegions = [PWEngagement monitoredGeozones];
+            NSArray *coreLocationMonitoredRegions = [PWEngagement monitoredZones];
             
             for (CLRegion * region in coreLocationMonitoredRegions) {
                 if ([region isKindOfClass:[CLCircularRegion class]]) {
@@ -123,13 +123,13 @@ static NSString * kSANonMonitoredRegionCircle = @"SANonMonitoredRegionCircle";
             NSMutableArray *overlaysToAdd = @[].mutableCopy;
             NSMutableArray *annotationsToAdd = @[].mutableCopy;
             
-            self.monitoredLocation = [[NSSet alloc] initWithArray:[PWEngagement monitoredGeozones]];
+            self.monitoredLocation = [[NSSet alloc] initWithArray:[PWEngagement monitoredZones]];
             
             NSMutableSet *nonMonitored  = [[NSMutableSet alloc] initWithArray:[PWEngagement geozones]];
             [nonMonitored minusSet:self.monitoredLocation];
             self.nonMonitoredLocation = nonMonitored;
             
-            NSArray *coreLocationMonitoredRegions = [PWEngagement monitoredGeozones];
+            NSArray *coreLocationMonitoredRegions = [PWEngagement monitoredZones];
             
             // Displaying the regions monitored by Core Location
             for (CLRegion * region in coreLocationMonitoredRegions) {
@@ -153,7 +153,7 @@ static NSString * kSANonMonitoredRegionCircle = @"SANonMonitoredRegionCircle";
                 }
                 [overlaysToAdd addObject:circle];
                 
-                LPMapAnnotation *pointAnnotation = [LPMapAnnotation new];
+                MapAnnotation *pointAnnotation = [MapAnnotation new];
                 pointAnnotation.coordinate = region.center;
                 pointAnnotation.title = geozone.name;
                 pointAnnotation.zone = geozone;
@@ -216,9 +216,9 @@ static NSString * kSANonMonitoredRegionCircle = @"SANonMonitoredRegionCircle";
     }
     
     MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:@"123"];
-    if ([annotation isKindOfClass:[LPMapAnnotation class]]) {
+    if ([annotation isKindOfClass:[MapAnnotation class]]) {
         
-        LPMapAnnotation *mapAnnotation = (LPMapAnnotation*)annotation;
+        MapAnnotation *mapAnnotation = (MapAnnotation*)annotation;
         
         MKPinAnnotationView * pinAnnotationView = (MKPinAnnotationView*)annotationView;
         if (pinAnnotationView == nil) {
@@ -251,9 +251,9 @@ static NSString * kSANonMonitoredRegionCircle = @"SANonMonitoredRegionCircle";
     
     id<MKAnnotation> annotation = view.annotation;
     
-    if ([annotation isKindOfClass:[LPMapAnnotation class]]) {
+    if ([annotation isKindOfClass:[MapAnnotation class]]) {
         
-        LPMapAnnotation *mapAnnotation = (LPMapAnnotation*)annotation;
+        MapAnnotation *mapAnnotation = (MapAnnotation*)annotation;
         
         if (mapAnnotation.zone)
         {

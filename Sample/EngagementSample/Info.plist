@@ -23,11 +23,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MaaSAccessKey</key>
-	<string>de9665256f47eee958c5130fc3b1835f3a85ddd9</string>
+	<string></string>
 	<key>MaaSAppId</key>
-	<string>316</string>
+	<string></string>
 	<key>MaaSSignatureKey</key>
-	<string>4ecfecb83c83feabcd3b975e46302ec6adec10ec</string>
+	<string></string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Please allow the app to use your location</string>
 	<key>UIBackgroundModes</key>

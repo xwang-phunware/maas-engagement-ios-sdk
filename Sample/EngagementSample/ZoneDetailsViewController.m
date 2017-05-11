@@ -7,7 +7,7 @@
 //
 
 #import "ZoneDetailsViewController.h"
-#import "LPMapAnnotation.h"
+#import "MapAnnotation.h"
 #import <PWEngagement/PWMEGeozone.h>
 
 static NSString * kSAMonitoredInsideRegionCircle = @"SAMonitoredInsideRegionCircle";
@@ -134,7 +134,7 @@ static NSString * kSANonMonitoredRegionCircle = @"SANonMonitoredRegionCircle";
         }
         [overlaysToAdd addObject:circle];
         
-        LPMapAnnotation *pointAnnotation = [LPMapAnnotation new];
+        MapAnnotation *pointAnnotation = [MapAnnotation new];
         pointAnnotation.coordinate = region.center;
         pointAnnotation.title = geozone.name;
         pointAnnotation.zone = geozone;
@@ -182,9 +182,9 @@ static NSString * kSANonMonitoredRegionCircle = @"SANonMonitoredRegionCircle";
     }
     
     MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:@"123"];
-    if ([annotation isKindOfClass:[LPMapAnnotation class]]) {
+    if ([annotation isKindOfClass:[MapAnnotation class]]) {
         
-        LPMapAnnotation *mapAnnotation = (LPMapAnnotation*)annotation;
+        MapAnnotation *mapAnnotation = (MapAnnotation *)annotation;
         
         MKPinAnnotationView * pinAnnotationView = (MKPinAnnotationView*)annotationView;
         if (pinAnnotationView == nil) {

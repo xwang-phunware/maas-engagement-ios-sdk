@@ -1,5 +1,5 @@
 //
-//  LPZoneEventListener.h
+//  MessageListener.h
 
 //
 //  Created on 4/20/15.
@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LPZoneEventListener : NSObject
+@interface MessageListener : NSObject
 
 /**
- Register for listening zone events
+ Register for listening message events
  */
 - (void)startListening;
 
 /**
- Unregister for listening zone events
+ Unregister for listening message events
  */
 - (void)stopListening;
 

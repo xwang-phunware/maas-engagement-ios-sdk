@@ -14,18 +14,17 @@
 #import "MessagesTableViewController.h"
 #import "MessageDetailViewController.h"
 #import "MessagesManager.h"
-#import "LPMessageListener.h"
-#import "LPZoneEventListener.h"
+#import "MessageListener.h"
+#import "ZoneEventListener.h"
 #import "PubUtils.h"
 #import "NSObject+GcdHelper.h"
 #import "MBProgressHUD.h"
 
-#import "PWCore+Private.h"
 
 @interface AppDelegate ()
 
-@property (nonatomic, strong) LPMessageListener *messageListener;
-@property (nonatomic, strong) LPZoneEventListener *zoneEventListener;
+@property (nonatomic, strong) MessageListener *messageListener;
+@property (nonatomic, strong) ZoneEventListener *zoneEventListener;
 
 @end
 
@@ -38,22 +37,20 @@
 	NSString *accessKey =[[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAccessKey"];
 	NSString *signatureKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSSignatureKey"]	;
 	
-	[PWCore setEnvironment:PWEnvironmentStage];
-	
 	[PWEngagement startWithMaasAppId:appID
 							accessKey:accessKey
 						 signatureKey:signatureKey
 						encryptionKey:@""
 						   completion:^(NSError *error) {
 							   
-						   }];
+	}];
 		
         // Start listen message events
-        self.messageListener = [LPMessageListener new];
+        self.messageListener = [MessageListener new];
         [self.messageListener startListening];
         
         // Start listen zone events
-        self.zoneEventListener = [LPZoneEventListener new];
+        self.zoneEventListener = [ZoneEventListener new];
         [self.zoneEventListener startListening];
         
         // Refresh badge on app icon and tabbar
@@ -67,7 +64,7 @@
             }
             // YES - prompt when user turns off push notification setting
             return YES;
-	}];
+		}];
 	
     return YES;
 }

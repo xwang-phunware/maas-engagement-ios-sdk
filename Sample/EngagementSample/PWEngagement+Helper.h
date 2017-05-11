@@ -9,10 +9,10 @@
 
 @interface PWEngagement(Helper)
 
-+ (NSArray *)monitoredGeozones;
++ (NSArray *)monitoredZones;
 
-+ (NSArray *)insideGeozones;
++ (NSArray *)insideZones;
 
-+ (PWMEZoneMessage *)getMessage:(NSString *)messageId;
++ (PWMEZoneMessage *)fetchMessage:(NSString *)messageId;
 
 @end

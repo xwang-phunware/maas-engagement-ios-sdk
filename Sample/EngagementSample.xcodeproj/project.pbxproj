@@ -16,7 +16,7 @@
 		8B8678141D77D84300A1629D /* AttributeTableViewTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B86780E1D77D84300A1629D /* AttributeTableViewTextFieldCell.xib */; };
 		8B8678181D77D86600A1629D /* PWEngagement+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8678171D77D86600A1629D /* PWEngagement+Helper.m */; };
 		8B8678251D77D8B900A1629D /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8678241D77D8B900A1629D /* AppInfoViewController.m */; };
-		8B86782F1D77D8D400A1629D /* LPMessageListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8678281D77D8D400A1629D /* LPMessageListener.m */; };
+		8B86782F1D77D8D400A1629D /* MessageListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8678281D77D8D400A1629D /* MessageListener.m */; };
 		8B8678301D77D8D400A1629D /* MessageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86782A1D77D8D400A1629D /* MessageDetailViewController.m */; };
 		8B8678311D77D8D400A1629D /* MessagesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86782C1D77D8D400A1629D /* MessagesManager.m */; };
 		8B8678321D77D8D400A1629D /* MessagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86782E1D77D8D400A1629D /* MessagesTableViewController.m */; };
@@ -29,8 +29,8 @@
 		8B8678501D77D93F00A1629D /* NSObject+GcdHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8678481D77D93F00A1629D /* NSObject+GcdHelper.m */; };
 		8B8678511D77D93F00A1629D /* PubUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86784A1D77D93F00A1629D /* PubUtils.m */; };
 		8B8678521D77D93F00A1629D /* PWCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86784C1D77D93F00A1629D /* PWCircleView.m */; };
-		8B8678661D77D95800A1629D /* LPMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8678561D77D95800A1629D /* LPMapAnnotation.m */; };
-		8B8678671D77D95800A1629D /* LPZoneEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8678581D77D95800A1629D /* LPZoneEventListener.m */; };
+		8B8678661D77D95800A1629D /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8678561D77D95800A1629D /* MapAnnotation.m */; };
+		8B8678671D77D95800A1629D /* ZoneEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8678581D77D95800A1629D /* ZoneEventListener.m */; };
 		8B8678681D77D95800A1629D /* MapLegendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86785A1D77D95800A1629D /* MapLegendController.m */; };
 		8B8678691D77D95800A1629D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86785C1D77D95800A1629D /* MapViewController.m */; };
 		8B86786A1D77D95800A1629D /* MapViewLegendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86785E1D77D95800A1629D /* MapViewLegendCell.m */; };
@@ -64,8 +64,8 @@
 		8B8678171D77D86600A1629D /* PWEngagement+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PWEngagement+Helper.m"; sourceTree = "<group>"; };
 		8B8678231D77D8B900A1629D /* AppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
 		8B8678241D77D8B900A1629D /* AppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
-		8B8678271D77D8D400A1629D /* LPMessageListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPMessageListener.h; sourceTree = "<group>"; };
-		8B8678281D77D8D400A1629D /* LPMessageListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPMessageListener.m; sourceTree = "<group>"; };
+		8B8678271D77D8D400A1629D /* MessageListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageListener.h; sourceTree = "<group>"; };
+		8B8678281D77D8D400A1629D /* MessageListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageListener.m; sourceTree = "<group>"; };
 		8B8678291D77D8D400A1629D /* MessageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailViewController.h; sourceTree = "<group>"; };
 		8B86782A1D77D8D400A1629D /* MessageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailViewController.m; sourceTree = "<group>"; };
 		8B86782B1D77D8D400A1629D /* MessagesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesManager.h; sourceTree = "<group>"; };
@@ -90,10 +90,10 @@
 		8B86784A1D77D93F00A1629D /* PubUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubUtils.m; sourceTree = "<group>"; };
 		8B86784B1D77D93F00A1629D /* PWCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWCircleView.h; sourceTree = "<group>"; };
 		8B86784C1D77D93F00A1629D /* PWCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCircleView.m; sourceTree = "<group>"; };
-		8B8678551D77D95800A1629D /* LPMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPMapAnnotation.h; sourceTree = "<group>"; };
-		8B8678561D77D95800A1629D /* LPMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPMapAnnotation.m; sourceTree = "<group>"; };
-		8B8678571D77D95800A1629D /* LPZoneEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPZoneEventListener.h; sourceTree = "<group>"; };
-		8B8678581D77D95800A1629D /* LPZoneEventListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPZoneEventListener.m; sourceTree = "<group>"; };
+		8B8678551D77D95800A1629D /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		8B8678561D77D95800A1629D /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		8B8678571D77D95800A1629D /* ZoneEventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoneEventListener.h; sourceTree = "<group>"; };
+		8B8678581D77D95800A1629D /* ZoneEventListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoneEventListener.m; sourceTree = "<group>"; };
 		8B8678591D77D95800A1629D /* MapLegendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLegendController.h; sourceTree = "<group>"; };
 		8B86785A1D77D95800A1629D /* MapLegendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLegendController.m; sourceTree = "<group>"; };
 		8B86785B1D77D95800A1629D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -176,8 +176,8 @@
 		8B4A31B51D77F19F009352BC /* MessagesListener */ = {
 			isa = PBXGroup;
 			children = (
-				8B8678271D77D8D400A1629D /* LPMessageListener.h */,
-				8B8678281D77D8D400A1629D /* LPMessageListener.m */,
+				8B8678271D77D8D400A1629D /* MessageListener.h */,
+				8B8678281D77D8D400A1629D /* MessageListener.m */,
 			);
 			name = MessagesListener;
 			sourceTree = "<group>";
@@ -254,10 +254,10 @@
 		8B86786F1D77D96700A1629D /* Zones */ = {
 			isa = PBXGroup;
 			children = (
-				8B8678551D77D95800A1629D /* LPMapAnnotation.h */,
-				8B8678561D77D95800A1629D /* LPMapAnnotation.m */,
-				8B8678571D77D95800A1629D /* LPZoneEventListener.h */,
-				8B8678581D77D95800A1629D /* LPZoneEventListener.m */,
+				8B8678551D77D95800A1629D /* MapAnnotation.h */,
+				8B8678561D77D95800A1629D /* MapAnnotation.m */,
+				8B8678571D77D95800A1629D /* ZoneEventListener.h */,
+				8B8678581D77D95800A1629D /* ZoneEventListener.m */,
 				8B86785B1D77D95800A1629D /* MapViewController.h */,
 				8B86785C1D77D95800A1629D /* MapViewController.m */,
 				8B8678591D77D95800A1629D /* MapLegendController.h */,
@@ -363,7 +363,7 @@
 					8BDBDB4D1D77A086001FF35B = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 84CK77G588;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -469,12 +469,12 @@
 				8B8678301D77D8D400A1629D /* MessageDetailViewController.m in Sources */,
 				8B8678511D77D93F00A1629D /* PubUtils.m in Sources */,
 				8B8678681D77D95800A1629D /* MapLegendController.m in Sources */,
-				8B86782F1D77D8D400A1629D /* LPMessageListener.m in Sources */,
+				8B86782F1D77D8D400A1629D /* MessageListener.m in Sources */,
 				8B8678401D77D91800A1629D /* SettingDataSource.m in Sources */,
 				8B8678111D77D84300A1629D /* ProfileAttributeValuesTableViewController.m in Sources */,
 				8B86784F1D77D93F00A1629D /* DismissSegue.m in Sources */,
 				8B86786B1D77D95800A1629D /* ZoneDetailsViewController.m in Sources */,
-				8B8678661D77D95800A1629D /* LPMapAnnotation.m in Sources */,
+				8B8678661D77D95800A1629D /* MapAnnotation.m in Sources */,
 				8B8678321D77D8D400A1629D /* MessagesTableViewController.m in Sources */,
 				8B8678421D77D91800A1629D /* ToggleTableViewCell.m in Sources */,
 				8B8678521D77D93F00A1629D /* PWCircleView.m in Sources */,
@@ -490,7 +490,7 @@
 				8B8678181D77D86600A1629D /* PWEngagement+Helper.m in Sources */,
 				8B8678251D77D8B900A1629D /* AppInfoViewController.m in Sources */,
 				8B8678501D77D93F00A1629D /* NSObject+GcdHelper.m in Sources */,
-				8B8678671D77D95800A1629D /* LPZoneEventListener.m in Sources */,
+				8B8678671D77D95800A1629D /* ZoneEventListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,13 +611,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EngagementSample.entitlements;
-				DEVELOPMENT_TEAM = 84CK77G588;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EngagementSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.phunware.lptester-stage";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "388c74c2-5489-43e4-bef2-5cc08d3e93a2";
-				PROVISIONING_PROFILE_SPECIFIER = "LM Tester on Stage Development Profile";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -628,13 +629,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EngagementSample.entitlements;
-				DEVELOPMENT_TEAM = 84CK77G588;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EngagementSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.phunware.lptester-stage";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "388c74c2-5489-43e4-bef2-5cc08d3e93a2";
-				PROVISIONING_PROFILE_SPECIFIER = "LM Tester on Stage Development Profile";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

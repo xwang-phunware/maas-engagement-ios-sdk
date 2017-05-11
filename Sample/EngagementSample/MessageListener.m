@@ -1,5 +1,5 @@
 //
-//  LPMessageListener.m
+//  MessageListener.m
 
 //
 //  Created on 4/20/15.
@@ -7,12 +7,12 @@
 //
 
 #import "PWEngagement+Helper.h"
-#import "LPMessageListener.h"
+#import "MessageListener.h"
 #import "MessagesManager.h"
 #import "AppSettingsDataSource.h"
 #import "PubUtils.h"
 
-@implementation LPMessageListener
+@implementation MessageListener
 
 #pragma mark - Public methods
 
@@ -52,7 +52,7 @@
  */
 - (void)didReceiveMessageNotification:(NSNotification*)notification {
     NSString *messageId = [notification.userInfo valueForKey:PWMEMessageIdentifierKey];
-    PWMEZoneMessage *message = [PWEngagement getMessage:messageId];
+    PWMEZoneMessage *message = [PWEngagement fetchMessage:messageId];
     if (message) {
         [[MessagesManager sharedManager] refreshBadgeCounter];
         
@@ -72,7 +72,7 @@
  */
 - (void)didModifyMessageNotification:(NSNotification*)notification {
     NSString *messageId = [notification.userInfo valueForKey:PWMEMessageIdentifierKey];
-    PWMEZoneMessage *message = [PWEngagement getMessage:messageId];
+    PWMEZoneMessage *message = [PWEngagement fetchMessage:messageId];
     if (message) {
         [[MessagesManager sharedManager] refreshBadgeCounter];
         // Modified message is fetched
@@ -108,7 +108,7 @@
  */
 - (void)didReadMessageNotification:(NSNotification*)notification {
     NSString *messageId = [notification.userInfo valueForKey:PWMEMessageIdentifierKey];
-    PWMEZoneMessage *message = [PWEngagement getMessage:messageId];
+    PWMEZoneMessage *message = [PWEngagement fetchMessage:messageId];
     
     if (message) {
         [[MessagesManager sharedManager] refreshBadgeCounter];

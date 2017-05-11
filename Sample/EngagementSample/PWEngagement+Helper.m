@@ -9,15 +9,15 @@
 
 @implementation PWEngagement(Helper)
 
-+ (NSArray *)monitoredGeozones {
++ (NSArray *)monitoredZones {
     return [[PWEngagement geozones] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"monitored == YES"]];
 }
 
-+ (NSArray *)insideGeozones {
++ (NSArray *)insideZones {
     return [[PWEngagement geozones] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"inside == YES"]];
 }
 
-+ (PWMEZoneMessage *)getMessage:(NSString *)messageId {
++ (PWMEZoneMessage *)fetchMessage:(NSString *)messageId {
     for (PWMEZoneMessage *message in [PWEngagement messages]) {
         if ([messageId isEqualToString:message.identifier]) {
             return message;
