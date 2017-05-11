@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PWEngagement/**"'}
   
   s.dependency 'PWCore'
+  s.dependency 'FMDB'
   
   s.library = 'sqlite3', 'z'
   s.ios.frameworks = 'CoreLocation'
