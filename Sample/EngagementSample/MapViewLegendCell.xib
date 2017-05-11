@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="Ztg-lD-aal" customClass="MapViewLegendCell">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ztg-lD-aal" id="l0j-ui-2f9">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RK-8J-auJ" customClass="PWCircleView">
+                        <rect key="frame" x="10" y="13" width="40" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="BcM-ny-VZ2"/>
+                            <constraint firstAttribute="height" constant="40" id="K2w-aO-imD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yz3-nZ-M0u" userLabel="Pin view" customClass="MKPinAnnotationView">
+                        <rect key="frame" x="23" y="14" width="26" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="20V-vx-nH4"/>
+                            <constraint firstAttribute="width" constant="26" id="6tk-dh-fRc"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Some Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="297" translatesAutoresizingMaskIntoConstraints="NO" id="vli-72-JbE" userLabel="Top Label">
+                        <rect key="frame" x="58" y="8" width="297" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="297" translatesAutoresizingMaskIntoConstraints="NO" id="9sN-8y-yeh" userLabel="Bottom Label">
+                        <rect key="frame" x="58" y="30" width="297" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vli-72-JbE" firstAttribute="leading" secondItem="8RK-8J-auJ" secondAttribute="trailing" constant="8" id="3Vt-uJ-jlR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vli-72-JbE" secondAttribute="trailing" constant="4" id="5Re-qf-g40"/>
+                    <constraint firstItem="8RK-8J-auJ" firstAttribute="leading" secondItem="l0j-ui-2f9" secondAttribute="leadingMargin" constant="2" id="AvF-KJ-aGx"/>
+                    <constraint firstAttribute="centerY" secondItem="8RK-8J-auJ" secondAttribute="centerY" id="E1L-oW-yUh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9sN-8y-yeh" secondAttribute="trailing" constant="4" id="F5B-m8-5yg"/>
+                    <constraint firstItem="9sN-8y-yeh" firstAttribute="top" secondItem="vli-72-JbE" secondAttribute="bottom" constant="5" id="GEB-y5-Orm"/>
+                    <constraint firstItem="9sN-8y-yeh" firstAttribute="bottom" secondItem="l0j-ui-2f9" secondAttribute="bottomMargin" id="JdL-D7-fo3"/>
+                    <constraint firstItem="yz3-nZ-M0u" firstAttribute="leading" secondItem="l0j-ui-2f9" secondAttribute="leadingMargin" constant="15" id="LRr-B0-ysy"/>
+                    <constraint firstAttribute="centerY" secondItem="yz3-nZ-M0u" secondAttribute="centerY" constant="4" id="UZ6-Qw-rtb"/>
+                    <constraint firstItem="vli-72-JbE" firstAttribute="top" secondItem="l0j-ui-2f9" secondAttribute="topMargin" id="V9Q-iY-948"/>
+                    <constraint firstItem="vli-72-JbE" firstAttribute="leading" secondItem="9sN-8y-yeh" secondAttribute="leading" id="dwo-U2-T69"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomLegendLabel" destination="9sN-8y-yeh" id="aza-qK-faT"/>
+                <outlet property="legendImage" destination="8RK-8J-auJ" id="7YI-tR-JGj"/>
+                <outlet property="pinAnnotation" destination="yz3-nZ-M0u" id="Q9g-qQ-9WP"/>
+                <outlet property="topLegendLabel" destination="vli-72-JbE" id="HOM-EO-apy"/>
+            </connections>
+            <point key="canvasLocation" x="667.5" y="293.5"/>
+        </tableViewCell>
+    </objects>
+</document>
