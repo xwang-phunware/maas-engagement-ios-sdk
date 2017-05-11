@@ -18,7 +18,7 @@ Documentation
 Framework documentation is included in the the repository's Documents folder in both HTML and Docset formats. 
 
 - API reference: [Maas Engagement API Reference.] (http://phunware.github.io/maas-engagement-ios-sdk/)
-- Documentation can be found at [developer.phunware.com.] (https://developer.phunware.com/pages/viewpage.action?pageId=3409272)
+- Documentation can be found at [developer.phunware.com.] (https://developer.phunware.com/pages/viewpage.action?pageId=3409591)
 
 Steps to run the sample app
 ------------
@@ -43,7 +43,6 @@ Steps to run the sample app
      * Environment: Use Production environment for production apps.  
    
 
- 
 Attribution
 ------------
 
@@ -56,3 +55,7 @@ PWEngagement uses the following third-party components.
 Privacy
 -----------
 You understand and consent to Phunware’s Privacy Policy located at www.phunware.com/privacy. If your use of Phunware’s software requires a Privacy Policy of your own, you also agree to include the terms of Phunware’s Privacy Policy in your Privacy Policy to your end users.
+
+Terms
+-----------
+Use of this software requires review and acceptance of our terms and conditions for developer use located at http://www.phunware.com/terms/
