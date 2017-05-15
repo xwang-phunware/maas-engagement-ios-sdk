@@ -17,8 +17,8 @@ Documentation
 ------------
 Framework documentation is included in the the repository's Documents folder in both HTML and Docset formats. 
 
-- API reference: [Maas Engagement API Reference.] (http://phunware.github.io/maas-engagement-ios-sdk/)
-- Documentation can be found at [developer.phunware.com.] (https://developer.phunware.com/pages/viewpage.action?pageId=3409591)
+- API reference: [ Maas Engagement API Reference ] (http://phunware.github.io/maas-engagement-ios-sdk/)
+- Documentation can be found at [ developer.phunware.com ] (https://developer.phunware.com/pages/viewpage.action?pageId=3409591)
 
 Steps to run the sample app
 ------------
@@ -33,7 +33,7 @@ Steps to run the sample app
  * MaaSSignatureKey : The signature key from MaaS Portal.
 
 4. Configure your app for push notifications.
-   * Go to [developer.apple.com] (http://developer.apple.com) and  create a push notification certificate.([Push notification tutorial](https://www.raywenderlich.com/123862/push-notifications-tutorial))
+   * Go to [ developer.apple.com ] (http://developer.apple.com) and  create a push notification certificate.([Push notification tutorial](https://www.raywenderlich.com/123862/push-notifications-tutorial))
    
    * Once it's created, download the push production certificate and add it to Keychain Access. Then, from Keychain Access, export both the certificate and key. (Right click to view the Export option) as a  .p12 and set a password.
    
