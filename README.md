@@ -5,7 +5,7 @@ Version 3.1.0
 
 Overview
 ------------
-This is Phunware's iOS SDK for Mobile Engagement, a location and notification-based system. Visit http://maas.phunware.com/ for more details and to sign up.
+This is Phunware's iOS SDK for Mobile Engagement, a location and notification-based system. Visit https://maas.phunware.com/ for more details and to sign up.
 
 Requirements
 ------------
@@ -17,8 +17,8 @@ Documentation
 ------------
 Framework documentation is included in the the repository's Documents folder in both HTML and Docset formats. 
 
-- API reference: [ Maas Engagement API Reference ] (http://phunware.github.io/maas-engagement-ios-sdk/)
-- Documentation can be found at [ developer.phunware.com ] (https://developer.phunware.com/pages/viewpage.action?pageId=3409591)
+- [API Reference](http://phunware.github.io/maas-engagement-ios-sdk/)
+- Documentation can be found at [developer.phunware.com](https://developer.phunware.com/pages/viewpage.action?pageId=3409591)
 
 Steps to run the sample app
 ------------
@@ -26,18 +26,18 @@ Steps to run the sample app
 
 2. Go to the directory of sample app and do a `pod install`.
 
-3. Add the following key/value pairs to Info.plist file:
+3. Add the following key/value pairs to `Info.plist`:
 
- * MaaSAppId : The application ID from MaaS Portal.
- * MaaSAccessKey : The accesskey from MaaS Portal.
- * MaaSSignatureKey : The signature key from MaaS Portal.
+ * `MaaSAppId`: The application ID from MaaS Portal.
+ * `MaaSAccessKey`: The access key from MaaS Portal.
+ * `MaaSSignatureKey`: The signature key from MaaS Portal.
 
 4. Configure your app for push notifications.
-   * Go to [ developer.apple.com ] (http://developer.apple.com) and  create a push notification certificate.([Push notification tutorial](https://www.raywenderlich.com/123862/push-notifications-tutorial))
+   * Go to [developer.apple.com](http://developer.apple.com) and create a push notification certificate ([tutorial link](https://www.raywenderlich.com/123862/push-notifications-tutorial)).
    
    * Once it's created, download the push production certificate and add it to Keychain Access. Then, from Keychain Access, export both the certificate and key. (Right click to view the Export option) as a  .p12 and set a password.
    
-   * Now, log on to the Maas Portal, navigate to the app created for your application and update the following.
+   * Now, log on to the [MaaS Portal](https://maas.phunware.com), navigate to the app created for your application and update the following.
      * Certificate (.p12): Click the grey ellipses button to upload the Production Push Certificate you created on developer.apple.com. 
      * Password: The password you setup for the push certificate. 
      * Environment: Use Production environment for production apps.  
