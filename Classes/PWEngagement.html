@@ -84,6 +84,8 @@
 		
 		<option value="//api/name/setStaticIdentifier:completion:">+ setStaticIdentifier:completion:</option>
 		
+		<option value="//api/name/startWithMaasAppId:accessKey:signatureKey:completion:">+ startWithMaasAppId:accessKey:signatureKey:completion:</option>
+		
 		<option value="//api/name/startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:">+ startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:</option>
 		
 		<option value="//api/name/stopWithCompletion:">+ stopWithCompletion:</option>
@@ -160,8 +162,8 @@ fully finish launching.</p>
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:" title="startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:">+&nbsp;startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:</a></code>
+	<a name="//api/name/startWithMaasAppId:accessKey:signatureKey:completion:" title="startWithMaasAppId:accessKey:signatureKey:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startWithMaasAppId:accessKey:signatureKey:completion:">+&nbsp;startWithMaasAppId:accessKey:signatureKey:completion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -176,7 +178,7 @@ fully finish launching.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)startWithMaasAppId:(NSString *)<em>maasAppId</em> accessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em> encryptionKey:(NSString *)<em>encryptionKey</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)startWithMaasAppId:(NSString *)<em>maasAppId</em> accessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
 
 		    
 			
@@ -200,11 +202,6 @@ fully finish launching.</p>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>encryptionKey</code></th>
-						<td><p>The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your Encryption Key in the MaaS portal.</p></td>
-					</tr>
-				
-					<tr>
 						<th scope="row" class="argument-name"><code>completion</code></th>
 						<td><p>A block that notify mobile engagement service is successfully started or failed to start with reason.
 - <em>param1</em> error It&rsquo;s nil when it&rsquo;s started successfully, or an error object containing information about a problem that indicates mobile engagement service failed to start.</p></td>
@@ -217,7 +214,7 @@ fully finish launching.</p>
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>A singleton class of <code>LocationMessaging</code></p>
+				<p>A singleton class of <code>Engagement</code></p>
 			</div>
 			
 
@@ -1074,6 +1071,86 @@ fully finish launching.</p>
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:" title="startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:">+&nbsp;startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method has been deprecated.
+Starts the mobile engagement service with environment.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)startWithMaasAppId:(NSString *)<em>maasAppId</em> accessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em> encryptionKey:(NSString *)<em>encryptionKey</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maasAppId</code></th>
+						<td><p>You can find your Application ID in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessKey</code></th>
+						<td><p>A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>signatureKey</code></th>
+						<td><p>A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>encryptionKey</code></th>
+						<td><p>The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your Encryption Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that notify mobile engagement service is successfully started or failed to start with reason.
+- <em>param1</em> error It&rsquo;s nil when it&rsquo;s started successfully, or an error object containing information about a problem that indicates mobile engagement service failed to start.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A singleton class of <code>Engagement</code></p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -1089,7 +1166,7 @@ fully finish launching.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Phunware, Inc. All rights reserved. Updated: 2017-04-13</p>
+						<p class="copyright">Copyright &copy; 2017 Phunware, Inc. All rights reserved. Updated: 2017-08-14</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
