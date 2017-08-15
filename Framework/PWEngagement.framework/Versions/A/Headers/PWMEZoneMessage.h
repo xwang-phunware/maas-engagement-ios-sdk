@@ -91,6 +91,12 @@ static NSString *const PWMEZoneMessageOnDemandBroadCastCampaignType = @"ON_DEMAN
 @property (readonly) NSString *campaignType;
 
 /**
+ Returns the timestamp identifying when the message is saved.
+ @return the timestamp identifying when the message is saved.
+ */
+@property (readonly) NSDate *timestamp;
+
+/**
  Deletes this message.
  */
 - (void)remove;

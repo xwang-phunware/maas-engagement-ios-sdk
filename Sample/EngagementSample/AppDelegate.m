@@ -40,7 +40,6 @@
 	[PWEngagement startWithMaasAppId:appID
 							accessKey:accessKey
 						 signatureKey:signatureKey
-						encryptionKey:@""
 						   completion:^(NSError *error) {
 							   
 	}];

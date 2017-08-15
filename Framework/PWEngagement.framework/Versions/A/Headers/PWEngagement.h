@@ -14,6 +14,8 @@
 #import <PWEngagement/PWMELocalNotification.h>
 #import <PWEngagement/PWMEAttributeManager.h>
 
+static NSString *const PWEngagementVersion = @"3.1.1";
+
 /**
  The message identifier key which may be included in the notification's userInfo dictionary.
  */
@@ -114,17 +116,14 @@ extern NSString *const PWMEMonitoredGeoZoneChangesNotificationKey;
  * @param maasAppId You can find your Application ID in the MaaS portal.
  * @param accessKey A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.
  * @param signatureKey A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.
- * @param encryptionKey The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your Encryption Key in the MaaS portal.
  * @param completion A block that notify mobile engagement service is successfully started or failed to start with reason.
  *      - *param1* error It's nil when it's started successfully, or an error object containing information about a problem that indicates mobile engagement service failed to start.
- * @return A singleton class of `LocationMessaging`
+ * @return A singleton class of `Engagement`
  */
 + (void)startWithMaasAppId:(NSString *)maasAppId
-				   accessKey:(NSString *)accessKey
-				signatureKey:(NSString *)signatureKey
-			   encryptionKey:(NSString *)encryptionKey
-				  completion:(void(^)(NSError *error))completion;
-
+				 accessKey:(NSString *)accessKey
+			  signatureKey:(NSString *)signatureKey
+				completion:(void(^)(NSError *error))completion;
 
 /**
  * Stop mobile engagement service.
@@ -240,5 +239,23 @@ extern NSString *const PWMEMonitoredGeoZoneChangesNotificationKey;
  * @param completion The block that notifies the user when static identifier registration is complete, and whether or not there was an error on the registration request.
  */
 + (void)setStaticIdentifier:(NSString *)staticIdentifier completion:(void(^)(NSError *error))completion;
+
+
+/**
+ * This method has been deprecated.
+ * Starts the mobile engagement service with environment.
+ * @param maasAppId You can find your Application ID in the MaaS portal.
+ * @param accessKey A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.
+ * @param signatureKey A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.
+ * @param encryptionKey The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your Encryption Key in the MaaS portal.
+ * @param completion A block that notify mobile engagement service is successfully started or failed to start with reason.
+ *      - *param1* error It's nil when it's started successfully, or an error object containing information about a problem that indicates mobile engagement service failed to start.
+ * @return A singleton class of `Engagement`
+ */
++ (void)startWithMaasAppId:(NSString *)maasAppId
+				 accessKey:(NSString *)accessKey
+			  signatureKey:(NSString *)signatureKey
+			 encryptionKey:(NSString *)encryptionKey
+				completion:(void(^)(NSError *error))completion __deprecated;
 
 @end
