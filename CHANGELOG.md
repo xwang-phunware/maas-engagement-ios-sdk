@@ -1,5 +1,11 @@
 Engagement iOS SDK - Change Logs
 ================================
+Version 3.1.1 *(10/16/2017)*
+----------------------------
+* Update the framework to dynamic.
+* Use latest logger functionality from PWCore.
+* Internal Fixes.
+
 
 Version 3.1.1 *(08/14/2017)*
 ----------------------------
