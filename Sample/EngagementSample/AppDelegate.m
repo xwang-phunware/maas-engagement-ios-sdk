@@ -19,6 +19,7 @@
 #import "PubUtils.h"
 #import "NSObject+GcdHelper.h"
 #import "MBProgressHUD.h"
+#import <PWCore/PWLogger.h>
 
 
 @interface AppDelegate ()
@@ -32,6 +33,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	
+	//Enable logging for debugging purposes.
+	[PWLogger setLoggersLogLevel:PWLogLevelDebug];
+	
+	[PWLogger consoleLoggingEnabled:YES forService:[PWEngagement serviceName]];
+	[PWLogger fileLoggingEnabled:YES forService:[PWEngagement serviceName]];
 	
 	NSString *appID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAppId"];
 	NSString *accessKey =[[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAccessKey"];
@@ -43,7 +49,7 @@
 						   completion:^(NSError *error) {
 							   
 	}];
-		
+	
         // Start listen message events
         self.messageListener = [MessageListener new];
         [self.messageListener startListening];
