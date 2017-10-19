@@ -1,5 +1,9 @@
 Engagement iOS SDK - Change Logs
 ================================
+Version 3.1.3 *(10/19/2017)*
+----------------------------
+* Update PWCore to 3.1.3
+
 Version 3.1.2 *(10/16/2017)*
 ----------------------------
 * Update the framework to dynamic.
@@ -16,6 +20,3 @@ Version 3.1.1 *(08/14/2017)*
 Version 3.1.0 *(05/11/2017)*
 ----------------------------
 * Messaging SDK is now called PWEngagement.
-
-
-

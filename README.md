@@ -1,7 +1,7 @@
 Engagement SDK for iOS
 ==================
 
-Version 3.1.2
+Version 3.1.3
 
 Overview
 ------------
@@ -11,11 +11,11 @@ Requirements
 ------------
 
 - iOS 9.0 or greater
-- Xcode 6 or greater
+- Xcode 8 or greater
 
 Documentation
 ------------
-Framework documentation is included in the the repository's Documents folder in both HTML and Docset formats. 
+Framework documentation is included in the the repository's Documents folder in both HTML and Docset formats.
 
 - [API Reference](http://phunware.github.io/maas-engagement-ios-sdk/)
 - Documentation can be found at [developer.phunware.com](https://developer.phunware.com/pages/viewpage.action?pageId=3409591)
@@ -34,19 +34,19 @@ Steps to run the sample app
 
 4. Configure your app for push notifications.
    * Go to [developer.apple.com](http://developer.apple.com) and create a push notification certificate ([tutorial link](https://www.raywenderlich.com/123862/push-notifications-tutorial)).
-   
+
    * Once it's created, download the push production certificate and add it to Keychain Access. Then, from Keychain Access, export both the certificate and key. (Right click to view the Export option) as a  .p12 and set a password.
-   
+
    * Now, log on to the [MaaS Portal](https://maas.phunware.com), navigate to the app created for your application and update the following.
-     * Certificate (.p12): Click the grey ellipses button to upload the Production Push Certificate you created on developer.apple.com. 
-     * Password: The password you setup for the push certificate. 
+     * Certificate (.p12): Click the grey ellipses button to upload the Production Push Certificate you created on developer.apple.com.
+     * Password: The password you setup for the push certificate.
      * Environment: Use Production environment for production apps.  
-   
+
 
 Attribution
 ------------
 
-PWEngagement uses the following third-party components. 
+PWEngagement uses the following third-party components.
 
 | Component | Description | License |
 |:---------:|:-----------:|:-------:|
