@@ -28,14 +28,16 @@
 	<string></string>
 	<key>MaaSSignatureKey</key>
 	<string></string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Please allow the app to use your location</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>always and when in use</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Please allow the app to use your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>when in use</string>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>bluetooth-central</string>
+		<string>fetch</string>
 		<string>location</string>
 		<string>remote-notification</string>
 	</array>
