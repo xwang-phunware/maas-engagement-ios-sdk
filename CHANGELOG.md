@@ -1,5 +1,9 @@
 Engagement iOS SDK - Change Logs
 ================================
+Version 3.2.0 *(12/18/2017)*
+----------------------------
+* vBLE Beacon Ranging
+
 Version 3.1.3 *(10/19/2017)*
 ----------------------------
 * Update PWCore to 3.1.3
