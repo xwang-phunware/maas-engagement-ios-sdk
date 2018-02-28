@@ -75,14 +75,12 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    // Notify Localpoint the app succeed to register for remote notification
     [PWEngagement didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 	
 
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    // Notify Localpoint the app fail to register for remote notification
     [PWEngagement didFailToRegisterForRemoteNotificationsWithError:error];
 }
 
@@ -97,7 +95,6 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    // Notify Localpoint the app receives a remote notificaiton
     [PWEngagement didReceiveRemoteNotification:userInfo withNotificationHandler:^(PWMELocalNotification *notification) {
         if (notification) {
             // Deep linking
@@ -107,7 +104,6 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    // Notify Localpoint the app receives a remote notificaiton
 	UIView *mainView = self.window.rootViewController.view;
 
 	[[self class] runAsyncTaskInForeground:^{

@@ -1,6 +1,5 @@
 //
 //  DetailsViewController.h
-//  LocalpointTester_iOS
 //
 //  Created on 2/21/13.
 //  Copyright (c) 2016 Phunware, Inc. All rights reserved.

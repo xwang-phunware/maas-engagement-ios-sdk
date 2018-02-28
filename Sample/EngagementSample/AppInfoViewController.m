@@ -1,6 +1,5 @@
 //
 //  DetailsViewController.m
-//  LocalpointTester_iOS
 //
 //  Created on 2/21/13.
 //  Copyright (c) 2013 Jason Schmitt. All rights reserved.
