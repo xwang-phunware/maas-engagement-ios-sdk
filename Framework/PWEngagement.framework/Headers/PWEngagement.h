@@ -15,7 +15,7 @@
 #import <PWEngagement/PWMELocalNotification.h>
 #import <PWEngagement/PWMEAttributeManager.h>
 
-static NSString *const PWEngagementVersion = @"3.3.0";
+static NSString *const PWEngagementVersion = @"3.3.1";
 
 /**
  The message identifier key which may be included in the notification's userInfo dictionary.
@@ -91,6 +91,11 @@ extern NSString *const PWMELocationServiceReadyNotificationKey;
  * Posted when determines that the monitored geo zone changes. 
  */
 extern NSString *const PWMEMonitoredGeoZoneChangesNotificationKey;
+
+/**
+ * Posted when didChangeAuthorizationStatus is called with kCLAuthorizationStatusAuthorizedWhenInUse status.
+ */
+extern NSString *const PWEngagementWhenInUseAuthorizationNotificationKey;
 
 /**
  * The mobile engagement framework is a location and notification based system.

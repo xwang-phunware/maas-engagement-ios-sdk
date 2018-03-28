@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWMELocalNotification.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWMELocalNotification</TokenIdentifier>
+			<Abstract type="html">A PWMELocalNotification object holds the information related to a local notification that will be shown to the user. The PWMELocalNotification object allows the alert title and alert body to be modified if needed.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMELocalNotification/setAlertTitle:</TokenIdentifier>
+			<Abstract type="html">Returns the title of the local notification.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (copy) NSString *alertTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">The title of this local notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertTitle</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMELocalNotification/alertTitle</TokenIdentifier>
+			<Abstract type="html">Returns the title of the local notification.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (copy) NSString *alertTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">The title of this local notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertTitle</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMELocalNotification/alertTitle</TokenIdentifier>
+			<Abstract type="html">Returns the title of the local notification.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (copy) NSString *alertTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">The title of this local notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertTitle</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMELocalNotification/setAlertBody:</TokenIdentifier>
+			<Abstract type="html">Returns the alert body of the local notification.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (copy) NSString *alertBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">The message of this local notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertBody</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMELocalNotification/alertBody</TokenIdentifier>
+			<Abstract type="html">Returns the alert body of the local notification.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (copy) NSString *alertBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">The message of this local notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertBody</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMELocalNotification/alertBody</TokenIdentifier>
+			<Abstract type="html">Returns the alert body of the local notification.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (copy) NSString *alertBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">The message of this local notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertBody</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMELocalNotification/setMessage:</TokenIdentifier>
+			<Abstract type="html">The zone message associated with the local notification.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) PWMEZoneMessage *message</Declaration>
+			
+			<ReturnValue><Abstract type="html">The zone message associated with the local notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMELocalNotification/message</TokenIdentifier>
+			<Abstract type="html">The zone message associated with the local notification.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) PWMEZoneMessage *message</Declaration>
+			
+			<ReturnValue><Abstract type="html">The zone message associated with the local notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMELocalNotification/message</TokenIdentifier>
+			<Abstract type="html">The zone message associated with the local notification.</Abstract>
+			<DeclaredIn>PWMELocalNotification.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) PWMEZoneMessage *message</Declaration>
+			
+			<ReturnValue><Abstract type="html">The zone message associated with the local notification.</Abstract></ReturnValue>
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

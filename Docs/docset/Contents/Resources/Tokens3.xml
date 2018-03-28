@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWMEGeozone.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWMEGeozone</TokenIdentifier>
+			<Abstract type="html">A PWMEGeozone object represents a circular region in a map with some associated data
+for that region.</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/setRegion:</TokenIdentifier>
+			<Abstract type="html">The circular region represented by the PWMEGeozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) CLCircularRegion *region</Declaration>
+			
+			
+			<Anchor>//api/name/region</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/region</TokenIdentifier>
+			<Abstract type="html">The circular region represented by the PWMEGeozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) CLCircularRegion *region</Declaration>
+			
+			
+			<Anchor>//api/name/region</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEGeozone/region</TokenIdentifier>
+			<Abstract type="html">The circular region represented by the PWMEGeozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) CLCircularRegion *region</Declaration>
+			
+			
+			<Anchor>//api/name/region</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">The geozone identifier. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/identifier</TokenIdentifier>
+			<Abstract type="html">The geozone identifier. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEGeozone/identifier</TokenIdentifier>
+			<Abstract type="html">The geozone identifier. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/setName:</TokenIdentifier>
+			<Abstract type="html">The name given to the geozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/name</TokenIdentifier>
+			<Abstract type="html">The name given to the geozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEGeozone/name</TokenIdentifier>
+			<Abstract type="html">The name given to the geozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/setCode:</TokenIdentifier>
+			<Abstract type="html">The code assigned to the geozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/code</TokenIdentifier>
+			<Abstract type="html">The code assigned to the geozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEGeozone/code</TokenIdentifier>
+			<Abstract type="html">The code assigned to the geozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *code</Declaration>
+			
+			
+			<Anchor>//api/name/code</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/setZoneDescription:</TokenIdentifier>
+			<Abstract type="html">The description assigned to the geozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *zoneDescription</Declaration>
+			
+			
+			<Anchor>//api/name/zoneDescription</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/zoneDescription</TokenIdentifier>
+			<Abstract type="html">The description assigned to the geozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *zoneDescription</Declaration>
+			
+			
+			<Anchor>//api/name/zoneDescription</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEGeozone/zoneDescription</TokenIdentifier>
+			<Abstract type="html">The description assigned to the geozone object. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSString *zoneDescription</Declaration>
+			
+			
+			<Anchor>//api/name/zoneDescription</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/setInside:</TokenIdentifier>
+			<Abstract type="html">A flag that indicates if the user is currently inside the geozone. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) BOOL inside</Declaration>
+			
+			
+			<Anchor>//api/name/inside</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/inside</TokenIdentifier>
+			<Abstract type="html">A flag that indicates if the user is currently inside the geozone. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) BOOL inside</Declaration>
+			
+			
+			<Anchor>//api/name/inside</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEGeozone/inside</TokenIdentifier>
+			<Abstract type="html">A flag that indicates if the user is currently inside the geozone. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) BOOL inside</Declaration>
+			
+			
+			<Anchor>//api/name/inside</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/setMonitored:</TokenIdentifier>
+			<Abstract type="html">A flag that indicates if the zone is monitored. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL monitored</Declaration>
+			
+			
+			<Anchor>//api/name/monitored</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/monitored</TokenIdentifier>
+			<Abstract type="html">A flag that indicates if the zone is monitored. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL monitored</Declaration>
+			
+			
+			<Anchor>//api/name/monitored</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEGeozone/monitored</TokenIdentifier>
+			<Abstract type="html">A flag that indicates if the zone is monitored. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL monitored</Declaration>
+			
+			
+			<Anchor>//api/name/monitored</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/setTags:</TokenIdentifier>
+			<Abstract type="html">A set of tags associated to the geozone. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSSet *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/tags</TokenIdentifier>
+			<Abstract type="html">A set of tags associated to the geozone. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSSet *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEGeozone/tags</TokenIdentifier>
+			<Abstract type="html">A set of tags associated to the geozone. (read-only)</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>@property (readonly, nonatomic) NSSet *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEGeozone/init</TokenIdentifier>
+			<Abstract type="html">Unavailable initializer.</Abstract>
+			<DeclaredIn>PWMEGeozone.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

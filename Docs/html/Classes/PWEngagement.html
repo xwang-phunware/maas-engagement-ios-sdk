@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PWEngagement Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">PWEngagement </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Phunware, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/deviceId">+ deviceId</option>
+		
+		<option value="//api/name/didFailToRegisterForRemoteNotificationsWithError:">+ didFailToRegisterForRemoteNotificationsWithError:</option>
+		
+		<option value="//api/name/didFinishLaunchingWithOptions:withCompletionHandler:">+ didFinishLaunchingWithOptions:withCompletionHandler:</option>
+		
+		<option value="//api/name/didReceiveLocalNotification:withNotificationHandler:">+ didReceiveLocalNotification:withNotificationHandler:</option>
+		
+		<option value="//api/name/didReceiveRemoteNotification:fetchCompletionHandler:withNotificationHandler:">+ didReceiveRemoteNotification:fetchCompletionHandler:withNotificationHandler:</option>
+		
+		<option value="//api/name/didReceiveRemoteNotification:withNotificationHandler:">+ didReceiveRemoteNotification:withNotificationHandler:</option>
+		
+		<option value="//api/name/didRegisterForRemoteNotificationsWithDeviceToken:">+ didRegisterForRemoteNotificationsWithDeviceToken:</option>
+		
+		<option value="//api/name/geozones">+ geozones</option>
+		
+		<option value="//api/name/messages">+ messages</option>
+		
+		<option value="//api/name/serviceName">+ serviceName</option>
+		
+		<option value="//api/name/setErrorHandler:">+ setErrorHandler:</option>
+		
+		<option value="//api/name/setLocalNotificationHandler:">+ setLocalNotificationHandler:</option>
+		
+		<option value="//api/name/setStaticIdentifier:completion:">+ setStaticIdentifier:completion:</option>
+		
+		<option value="//api/name/startWithMaasAppId:accessKey:signatureKey:completion:">+ startWithMaasAppId:accessKey:signatureKey:completion:</option>
+		
+		<option value="//api/name/startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:">+ startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:</option>
+		
+		<option value="//api/name/stopWithCompletion:">+ stopWithCompletion:</option>
+		
+		<option value="//api/name/version">+ version</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PWEngagement Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PWEngagement.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The mobile engagement framework is a location and notification based system.</p>
+
+<p>The recommended way to start mobile engagement in your application is to place a call
+to <code>+startWithmaasAppId:accessKey:signatureKey:encryptionKey:completion:</code> in your <code>-application:didFinishLaunchingWithOptions:</code> method.</p>
+
+<p>This delay defaults to 1 second in order to generally give the application time to
+fully finish launching.</p>
+
+<p>The framework needs you to forward the following methods from your application delegate:</p>
+
+<ul>
+<li>&lsquo;didFinishLaunchingWithOptions:withCompletionHandler:&rsquo;</li>
+<li>&lsquo;didRegisterForRemoteNotificationsWithDeviceToken:withNotificationHandler:&rsquo;</li>
+<li>&lsquo;didFailToRegisterForRemoteNotificationsWithError:withNotificationHandler:&rsquo;</li>
+<li>&lsquo;didReceiveRemoteNotification:withNotificationHandler:&rsquo;</li>
+</ul>
+
+
+<p>You can optionally add a delegate to be informed about errors while initalizing the mobile engagement service and to control the display of local notifications to the user.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startWithMaasAppId:accessKey:signatureKey:completion:" title="startWithMaasAppId:accessKey:signatureKey:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startWithMaasAppId:accessKey:signatureKey:completion:">+&nbsp;startWithMaasAppId:accessKey:signatureKey:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the mobile engagement service with environment.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)startWithMaasAppId:(NSString *)<em>maasAppId</em> accessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maasAppId</code></th>
+						<td><p>You can find your Application ID in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessKey</code></th>
+						<td><p>A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>signatureKey</code></th>
+						<td><p>A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that notify mobile engagement service is successfully started or failed to start with reason.
+- <em>param1</em> error It&rsquo;s nil when it&rsquo;s started successfully, or an error object containing information about a problem that indicates mobile engagement service failed to start.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopWithCompletion:" title="stopWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopWithCompletion:">+&nbsp;stopWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stop mobile engagement service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)stopWithCompletion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that notify mobile engagement service is successfully stopped or failed to stop with reason.</p>
+
+<ul>
+<li><em>error</em> It&rsquo;s nil when it&rsquo;s stopped successfully, or an error object containing information about a problem that indicates mobile engagement service failed to stop.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/geozones" title="geozones"></a>
+	<h3 class="method-title"><code><a href="#//api/name/geozones">+&nbsp;geozones</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>All the available <a href="../Classes/PWMEGeozone.html"><code>PWMEGeozone</code></a> list.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)geozones</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messages" title="messages"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messages">+&nbsp;messages</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>All the available <a href="../Classes/PWMEZoneMessage.html"><code>PWMEZoneMessage</code></a> list.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)messages</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceId" title="deviceId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceId">+&nbsp;deviceId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return the device identifier which the mobile engagement service uses.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)deviceId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/version" title="version"></a>
+	<h3 class="method-title"><code><a href="#//api/name/version">+&nbsp;version</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return the current SDK version of mobile engagement.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)version</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/serviceName" title="serviceName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serviceName">+&nbsp;serviceName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The name of the mobile engagement service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)serviceName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setErrorHandler:" title="setErrorHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setErrorHandler:">+&nbsp;setErrorHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the block to handle the error when it occurs.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setErrorHandler:(void ( ^ ) ( NSError *error ))<em>handler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handler</code></th>
+						<td><p>A block that caused mobile engagement service failed.</p>
+
+<ul>
+<li><em>error</em> An error object containing information about a problem that indicates mobile engagement service failed if the results are retrieved successfully.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLocalNotificationHandler:" title="setLocalNotificationHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLocalNotificationHandler:">+&nbsp;setLocalNotificationHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the block to handle the local notification which is about to display.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setLocalNotificationHandler:(BOOL ( ^ ) ( PWMELocalNotification *notification ))<em>handler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handler</code></th>
+						<td><p>A block that notifies the local notification is about to display, you can control the local notification display and customize the display content.</p>
+
+<ul>
+<li><em>notification</em> The <a href="../Classes/PWMELocalNotification.html"><code>PWMELocalNotification</code></a> object which contains notification information to display.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The local notification will be displayed if the block returns <code>YES</code>, otherwise, it will not be displayed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFinishLaunchingWithOptions:withCompletionHandler:" title="didFinishLaunchingWithOptions:withCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFinishLaunchingWithOptions:withCompletionHandler:">+&nbsp;didFinishLaunchingWithOptions:withCompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Lets the mobile engagement service know that launch process is almost done and the app is almost ready to run.(APNs).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)didFinishLaunchingWithOptions:(NSDictionary *)<em>launchOptions</em> withCompletionHandler:(BOOL ( ^ ) ( PWMELocalNotification *notification ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>launchOptions</code></th>
+						<td><p>A dictionary indicating the reason the app was launched (if any). The contents of this dictionary may be empty in situations where the user launched the app directly. For information about the possible keys in this dictionary and how to handle them, see Launch Options Keys.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block that tells if user opens the app by tapping a notification.</p>
+
+<ul>
+<li><em>notification</em> The notification object if user open the app by tapping a notification from notification tray, otherwise, it&rsquo;s nil.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The message deep linking could be fired from the <code>completionHandler</code> block. And if returns <code>YES</code> in the block, it will prompt an alert tells user how to enable push notification setting when it&rsquo;s disabled, and the prompted message could be configured in localized string file with key <code>RemindOfEnablePushNotificationSettings</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didRegisterForRemoteNotificationsWithDeviceToken:" title="didRegisterForRemoteNotificationsWithDeviceToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didRegisterForRemoteNotificationsWithDeviceToken:">+&nbsp;didRegisterForRemoteNotificationsWithDeviceToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Lets the mobile engagement service know that the app successfully registered with Apple Push Notification service (APNs).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)<em>deviceToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceToken</code></th>
+						<td><p>A token that identifies the device to APNs. The token is an opaque data type because that is the form that the provider needs to submit to the APNs servers when it sends a notification to a device. The APNs servers require a binary format for performance reasons. The size of a device token is 32 bytes. Note that the device token is different from the uniqueIdentifier property of UIDevice because, for security and privacy reasons, it must change when the device is wiped.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didFailToRegisterForRemoteNotificationsWithError:" title="didFailToRegisterForRemoteNotificationsWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didFailToRegisterForRemoteNotificationsWithError:">+&nbsp;didFailToRegisterForRemoteNotificationsWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Lets the mobile engagement service know that the Apple Push Notification service cannot successfully complete the registration process.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)didFailToRegisterForRemoteNotificationsWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>An NSError object that encapsulates information why registration did not succeed. The app can choose to display this information to the user.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didReceiveLocalNotification:withNotificationHandler:" title="didReceiveLocalNotification:withNotificationHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceiveLocalNotification:withNotificationHandler:">+&nbsp;didReceiveLocalNotification:withNotificationHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Lets the mobile engagement service know that the app receives a local notification, so that it can process it internally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)didReceiveLocalNotification:(UILocalNotification *)<em>notification</em> withNotificationHandler:(void ( ^ ) ( PWMELocalNotification *notification ))<em>notificationHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notification</code></th>
+						<td><p>A <code>UILocalNotification</code> object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notificationHandler</code></th>
+						<td><p>A block that tells the notification with message which was received.</p>
+
+<ul>
+<li><em>notification</em> The notification object which was received.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The message deep linking could be fired from the <code>completion</code> block.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didReceiveRemoteNotification:withNotificationHandler:" title="didReceiveRemoteNotification:withNotificationHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceiveRemoteNotification:withNotificationHandler:">+&nbsp;didReceiveRemoteNotification:withNotificationHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Lets the mobile engagement service know that the app receives a remote notification, so that it can process it internally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)didReceiveRemoteNotification:(NSDictionary *)<em>userInfo</em> withNotificationHandler:(void ( ^ ) ( PWMELocalNotification *notification ))<em>notificationHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an NSDictionary object; the dictionary may contain only property-list objects plus NSNull.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notificationHandler</code></th>
+						<td><p>A block that tells the notification with message which was received.</p>
+
+<ul>
+<li><em>notification</em> The notification object which was received.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The message deep linking could be fired from the <code>notificationHandler</code> block.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didReceiveRemoteNotification:fetchCompletionHandler:withNotificationHandler:" title="didReceiveRemoteNotification:fetchCompletionHandler:withNotificationHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didReceiveRemoteNotification:fetchCompletionHandler:withNotificationHandler:">+&nbsp;didReceiveRemoteNotification:fetchCompletionHandler:withNotificationHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Lets the mobile engagement service know that the app receives a remote notification, so that it can process it internally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)didReceiveRemoteNotification:(NSDictionary *)<em>userInfo</em> fetchCompletionHandler:(void ( ^ ) ( UIBackgroundFetchResult ))<em>completionHandler</em> withNotificationHandler:(void ( ^ ) ( PWMELocalNotification *notification ))<em>notificationHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an NSDictionary object; the dictionary may contain only property-list objects plus NSNull.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>The block to execute when the download operation is complete. When calling this block, pass in the fetch result value that best describes the results of your download operation. You must call this handler and should do so as soon as possible. For a list of possible values, see the UIBackgroundFetchResult type.</p>
+
+<ul>
+<li><em>userInfo</em> A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an NSDictionary object; the dictionary may contain only property-list objects plus NSNull.</li>
+</ul>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notificationHandler</code></th>
+						<td><p>A block that tells the notification with message which was received.</p>
+
+<ul>
+<li><em>notification</em>: The notification object which was received.</li>
+</ul>
+</td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The message deep linking could be fired from the <code>notificationHandler</code> block.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setStaticIdentifier:completion:" title="setStaticIdentifier:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setStaticIdentifier:completion:">+&nbsp;setStaticIdentifier:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the static identifier to be registered with the current device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setStaticIdentifier:(NSString *)<em>staticIdentifier</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>staticIdentifier</code></th>
+						<td><p>The identifier that will be associated with the current device identifier.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The block that notifies the user when static identifier registration is complete, and whether or not there was an error on the registration request.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This registers the selected static identifier with the device identifier.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:" title="startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:">+&nbsp;startWithMaasAppId:accessKey:signatureKey:encryptionKey:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method has been deprecated.
+Starts the mobile engagement service with environment.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)startWithMaasAppId:(NSString *)<em>maasAppId</em> accessKey:(NSString *)<em>accessKey</em> signatureKey:(NSString *)<em>signatureKey</em> encryptionKey:(NSString *)<em>encryptionKey</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maasAppId</code></th>
+						<td><p>You can find your Application ID in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessKey</code></th>
+						<td><p>A unique key that identifies the client making the request. You can find your Access Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>signatureKey</code></th>
+						<td><p>A unique key that is used to sign requests. The signature is used to both check request authorization as well as data integrity. You can find your Signature Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>encryptionKey</code></th>
+						<td><p>The key used to encrypt and decrypt data that is exchanged between the client and the server. You can find your Encryption Key in the MaaS portal.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block that notify mobile engagement service is successfully started or failed to start with reason.
+- <em>param1</em> error It&rsquo;s nil when it&rsquo;s started successfully, or an error object containing information about a problem that indicates mobile engagement service failed to start.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PWEngagement.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Phunware, Inc. All rights reserved. Updated: 2018-03-28</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

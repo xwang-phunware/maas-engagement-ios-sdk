@@ -1,5 +1,9 @@
-Engagement iOS SDK - Change Logs
-================================
+# PWEngagement Changelog
+## 3.3.1 (Wednesday, Mar 28th, 2018)
+#### Bug fixes / performance enhancements
+* Location is no longer required to download promotion data
+* Added notification when a user selects When-In-Use only permission
+
 ## 3.3.0 (Thursday, Feb 22nd, 2018)
 #### Features
 * Update to PWCore 3.3.x
@@ -7,28 +11,20 @@ Engagement iOS SDK - Change Logs
 #### Bug fixes / performance enhancements
 * Fixed crash when starting vBLE.
 
-
-Version 3.2.0 *(12/18/2017)*
-----------------------------
+## 3.2.0 (Monday, Dec 18th, 2017)
 * vBLE Beacon Ranging
 
-Version 3.1.3 *(10/19/2017)*
-----------------------------
+## 3.1.3 (Thursday, Oct 19th, 2017)
 * Update PWCore to 3.1.3
 
-Version 3.1.2 *(10/16/2017)*
-----------------------------
+## 3.1.2 (Monday, Oct 16th, 2017)
 * Update the framework to dynamic.
 * Use latest logger functionality from PWCore.
 * Internal Fixes.
 
-
-Version 3.1.1 *(08/14/2017)*
-----------------------------
+## 3.1.1 (Monday, Aug 14th, 2017)
 * Fix issue with title for broadcast campaigns.
 * Performance improvements and fixes.
 
-
-Version 3.1.0 *(05/11/2017)*
-----------------------------
+## 3.1.0 (Thursday, May 11th, 2017)
 * Messaging SDK is now called PWEngagement.

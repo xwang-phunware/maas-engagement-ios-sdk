@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWMEZoneMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWMEZoneMessage</TokenIdentifier>
+			<Abstract type="html">A PWZoneMessage is a communication (generally marketing-related) sent from the server.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setAlertTitle:</TokenIdentifier>
+			<Abstract type="html">Returns the alert title of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *alertTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">The alert title of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertTitle</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/alertTitle</TokenIdentifier>
+			<Abstract type="html">Returns the alert title of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *alertTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">The alert title of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertTitle</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/alertTitle</TokenIdentifier>
+			<Abstract type="html">Returns the alert title of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *alertTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">The alert title of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertTitle</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setAlertBody:</TokenIdentifier>
+			<Abstract type="html">Returns the alert body of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *alertBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">The alert body of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertBody</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/alertBody</TokenIdentifier>
+			<Abstract type="html">Returns the alert body of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *alertBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">The alert body of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertBody</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/alertBody</TokenIdentifier>
+			<Abstract type="html">Returns the alert body of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *alertBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">The alert body of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertBody</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setPromotionTitle:</TokenIdentifier>
+			<Abstract type="html">Returns the promotion title of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *promotionTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">The promotion title of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/promotionTitle</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/promotionTitle</TokenIdentifier>
+			<Abstract type="html">Returns the promotion title of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *promotionTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">The promotion title of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/promotionTitle</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/promotionTitle</TokenIdentifier>
+			<Abstract type="html">Returns the promotion title of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *promotionTitle</Declaration>
+			
+			<ReturnValue><Abstract type="html">The promotion title of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/promotionTitle</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setPromotionBody:</TokenIdentifier>
+			<Abstract type="html">Returns the promotion body of this message. The value returned by this method is usually HTML. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *promotionBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">The body of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/promotionBody</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/promotionBody</TokenIdentifier>
+			<Abstract type="html">Returns the promotion body of this message. The value returned by this method is usually HTML. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *promotionBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">The body of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/promotionBody</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/promotionBody</TokenIdentifier>
+			<Abstract type="html">Returns the promotion body of this message. The value returned by this method is usually HTML. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *promotionBody</Declaration>
+			
+			<ReturnValue><Abstract type="html">The body of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/promotionBody</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setMetaData:</TokenIdentifier>
+			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDictionary *metaData</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/metaData</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/metaData</TokenIdentifier>
+			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDictionary *metaData</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/metaData</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/metaData</TokenIdentifier>
+			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDictionary *metaData</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/metaData</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *identifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/identifier</TokenIdentifier>
+			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *identifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/identifier</TokenIdentifier>
+			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *identifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setIsRead:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether or not the entry is read.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL isRead</Declaration>
+			
+			<ReturnValue><Abstract type="html">A Boolean value indicating whether or not the message has been read.</Abstract></ReturnValue>
+			<Anchor>//api/name/isRead</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/isRead</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether or not the entry is read.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL isRead</Declaration>
+			
+			<ReturnValue><Abstract type="html">A Boolean value indicating whether or not the message has been read.</Abstract></ReturnValue>
+			<Anchor>//api/name/isRead</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/isRead</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether or not the entry is read.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL isRead</Declaration>
+			
+			<ReturnValue><Abstract type="html">A Boolean value indicating whether or not the message has been read.</Abstract></ReturnValue>
+			<Anchor>//api/name/isRead</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setCampaignType:</TokenIdentifier>
+			<Abstract type="html">A string containing the campaign type of the message.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *campaignType</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string containing the campaign type of the message.</Abstract></ReturnValue>
+			<Anchor>//api/name/campaignType</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/campaignType</TokenIdentifier>
+			<Abstract type="html">A string containing the campaign type of the message.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *campaignType</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string containing the campaign type of the message.</Abstract></ReturnValue>
+			<Anchor>//api/name/campaignType</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/campaignType</TokenIdentifier>
+			<Abstract type="html">A string containing the campaign type of the message.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *campaignType</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string containing the campaign type of the message.</Abstract></ReturnValue>
+			<Anchor>//api/name/campaignType</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setTimestamp:</TokenIdentifier>
+			<Abstract type="html">Returns the timestamp identifying when the message is saved.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDate *timestamp</Declaration>
+			
+			<ReturnValue><Abstract type="html">the timestamp identifying when the message is saved.</Abstract></ReturnValue>
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/timestamp</TokenIdentifier>
+			<Abstract type="html">Returns the timestamp identifying when the message is saved.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDate *timestamp</Declaration>
+			
+			<ReturnValue><Abstract type="html">the timestamp identifying when the message is saved.</Abstract></ReturnValue>
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/timestamp</TokenIdentifier>
+			<Abstract type="html">Returns the timestamp identifying when the message is saved.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDate *timestamp</Declaration>
+			
+			<ReturnValue><Abstract type="html">the timestamp identifying when the message is saved.</Abstract></ReturnValue>
+			<Anchor>//api/name/timestamp</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/remove</TokenIdentifier>
+			<Abstract type="html">Deletes this message.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>- (void)remove</Declaration>
+			
+			
+			<Anchor>//api/name/remove</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/read</TokenIdentifier>
+			<Abstract type="html">Marks this message as read.</Abstract>
+			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
+			
+			<Declaration>- (void)read</Declaration>
+			
+			
+			<Anchor>//api/name/read</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
