@@ -13,9 +13,9 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'Framework/PWEngagement.framework'
   s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PWEngagement/**"'}
   
-  s.dependency 'PWCore', '~> 3.3.0'
-  s.dependency 'MistSDK', '1.1.2'
-  s.dependency 'FMDB'
+  s.ios.dependency 'PWCore', '~> 3.3.0'
+  s.ios.dependency 'MistSDK', '1.1.2'
+  s.ios.dependency 'FMDB'
   
   s.library = 'sqlite3', 'z'
   s.ios.frameworks = 'CoreLocation'
