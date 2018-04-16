@@ -1,4 +1,11 @@
 # PWEngagement Changelog
+## 3.3.2 (Monday, Apr 16th, 2018)
+#### Features
+* Update to PWCore 3.4.x
+
+#### Bug fixes / performance enhancements
+* Fixed crash when background location updates aren't enabled
+
 ## 3.3.1 (Wednesday, Mar 28th, 2018)
 #### Bug fixes / performance enhancements
 * Location is no longer required to download promotion data
