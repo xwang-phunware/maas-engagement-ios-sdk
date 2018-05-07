@@ -1,4 +1,9 @@
 # PWEngagement Changelog
+## 3.4.0 (Monday, May 7th, 2018)
+#### Features
+* Removed location and push notification permission prompting
+* Update to PWCore 3.5.x
+
 ## 3.3.2 (Monday, Apr 16th, 2018)
 #### Features
 * Update to PWCore 3.4.x
