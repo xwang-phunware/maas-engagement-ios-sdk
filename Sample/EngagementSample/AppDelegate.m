@@ -39,45 +39,32 @@
 	[PWLogger consoleLoggingEnabled:YES forService:[PWEngagement serviceName]];
 	[PWLogger fileLoggingEnabled:YES forService:[PWEngagement serviceName]];
 	
-	NSString *appID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAppId"];
-	NSString *accessKey =[[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAccessKey"];
-	NSString *signatureKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSSignatureKey"]	;
-	
-	[PWEngagement startWithMaasAppId:appID
-							accessKey:accessKey
-						 signatureKey:signatureKey
-						   completion:^(NSError *error) {
-							   
-	}];
-	
-        // Start listen message events
-        self.messageListener = [MessageListener new];
-        [self.messageListener startListening];
-        
-        // Start listen zone events
-        self.zoneEventListener = [ZoneEventListener new];
-        [self.zoneEventListener startListening];
-        
-        // Refresh badge on app icon and tabbar
-        [[MessagesManager sharedManager] refreshBadgeCounter];
-	
-        // Notifies SDK the app launches
-        [PWEngagement didFinishLaunchingWithOptions:launchOptions withCompletionHandler:^BOOL(PWMELocalNotification *notification) {
-            if (notification) {
-                // Deep linking
-                [self pushMessageDetailViewControllerWithMessage:notification.message];
-            }
-            // YES - prompt when user turns off push notification setting
-            return YES;
-		}];
+    // Start listen message events
+    self.messageListener = [MessageListener new];
+    [self.messageListener startListening];
+    
+    // Start listen zone events
+    self.zoneEventListener = [ZoneEventListener new];
+    [self.zoneEventListener startListening];
+    
+    // Refresh badge on app icon and tabbar
+    [[MessagesManager sharedManager] refreshBadgeCounter];
+
+    // Notifies SDK the app launches
+    [PWEngagement didFinishLaunchingWithOptions:launchOptions withCompletionHandler:^BOOL(PWMELocalNotification *notification) {
+        if (notification) {
+            // Deep linking
+            [self pushMessageDetailViewControllerWithMessage:notification.message];
+        }
+        // YES - prompt when user turns off push notification setting
+        return YES;
+    }];
 	
     return YES;
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     [PWEngagement didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-	
-
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {

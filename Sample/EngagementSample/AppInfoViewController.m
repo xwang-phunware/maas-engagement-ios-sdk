@@ -13,7 +13,9 @@
 static NSString *const MaxMonitorRegionRadius = @"50,000";
 
 
-@interface AppInfoViewController ()
+@interface AppInfoViewController () <CLLocationManagerDelegate>
+
+@property (nonatomic, strong) CLLocationManager *clLocationManager;
 
 @end
 
@@ -32,11 +34,24 @@ static NSString *const MaxMonitorRegionRadius = @"50,000";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUI:) name:PWMEDeleteGeoZonesNotificationKey object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUI:) name:PWMEMonitoredGeoZoneChangesNotificationKey object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUI:) name:PWMELocationServiceReadyNotificationKey object:nil];
+    
+    self.clLocationManager = [CLLocationManager new];
+    self.clLocationManager.delegate = self;
+    [self.clLocationManager requestAlwaysAuthorization];
+    
+    UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
+    [notificationCenter requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionBadge | UNAuthorizationOptionAlert) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (granted) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[UIApplication sharedApplication] registerForRemoteNotifications];
+            });
+        }
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
+    
     [self updateUI:nil];
 }
 
@@ -81,5 +96,16 @@ static NSString *const MaxMonitorRegionRadius = @"50,000";
     [[NSNotificationCenter defaultCenter] removeObserver:self name:PWMELocationServiceReadyNotificationKey object:nil];
 }
 
+#pragma mark - CLLocationManagerDelegate
+
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    if (status == kCLAuthorizationStatusAuthorizedAlways) {
+        NSString *appID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAppId"];
+        NSString *accessKey =[[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAccessKey"];
+        NSString *signatureKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSSignatureKey"]    ;
+        
+        [PWEngagement startWithMaasAppId:appID accessKey:accessKey signatureKey:signatureKey completion:nil];
+    }
+}
 
 @end
