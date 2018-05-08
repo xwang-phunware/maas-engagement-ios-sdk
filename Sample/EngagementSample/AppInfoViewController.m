@@ -13,7 +13,7 @@
 static NSString *const MaxMonitorRegionRadius = @"50,000";
 
 
-@interface AppInfoViewController () <CLLocationManagerDelegate>
+@interface AppInfoViewController ()
 
 @property (nonatomic, strong) CLLocationManager *clLocationManager;
 
@@ -36,7 +36,6 @@ static NSString *const MaxMonitorRegionRadius = @"50,000";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUI:) name:PWMELocationServiceReadyNotificationKey object:nil];
     
     self.clLocationManager = [CLLocationManager new];
-    self.clLocationManager.delegate = self;
     [self.clLocationManager requestAlwaysAuthorization];
     
     UNUserNotificationCenter *notificationCenter = [UNUserNotificationCenter currentNotificationCenter];
@@ -94,18 +93,6 @@ static NSString *const MaxMonitorRegionRadius = @"50,000";
     [[NSNotificationCenter defaultCenter] removeObserver:self name:PWMEDeleteMessageNotificationKey object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:PWMEMonitoredGeoZoneChangesNotificationKey object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:PWMELocationServiceReadyNotificationKey object:nil];
-}
-
-#pragma mark - CLLocationManagerDelegate
-
--(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    if (status == kCLAuthorizationStatusAuthorizedAlways) {
-        NSString *appID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAppId"];
-        NSString *accessKey =[[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAccessKey"];
-        NSString *signatureKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSSignatureKey"]    ;
-        
-        [PWEngagement startWithMaasAppId:appID accessKey:accessKey signatureKey:signatureKey completion:nil];
-    }
 }
 
 @end
