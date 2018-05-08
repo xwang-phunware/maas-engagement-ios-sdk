@@ -38,6 +38,12 @@
 	
 	[PWLogger consoleLoggingEnabled:YES forService:[PWEngagement serviceName]];
 	[PWLogger fileLoggingEnabled:YES forService:[PWEngagement serviceName]];
+    
+    NSString *appID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAppId"];
+    NSString *accessKey =[[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAccessKey"];
+    NSString *signatureKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSSignatureKey"];
+    
+    [PWEngagement startWithMaasAppId:appID accessKey:accessKey signatureKey:signatureKey completion:nil];
 	
     // Start listen message events
     self.messageListener = [MessageListener new];
