@@ -41,7 +41,7 @@
     
     NSString *appID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAppId"];
     NSString *accessKey =[[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSAccessKey"];
-    NSString *signatureKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSSignatureKey"]    ;
+    NSString *signatureKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MaaSSignatureKey"];
     
     [PWEngagement startWithMaasAppId:appID accessKey:accessKey signatureKey:signatureKey completion:nil];
 	
