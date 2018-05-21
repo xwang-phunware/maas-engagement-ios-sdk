@@ -1,4 +1,8 @@
 # PWEngagement Changelog
+## 3.4.1 (Monday, May 21st, 2018)
+#### Bug fixes / performance enhancements
+* Fixed first app launch missed notifications
+
 ## 3.4.0 (Monday, May 7th, 2018)
 #### Features
 * Removed location and push notification permission prompting
