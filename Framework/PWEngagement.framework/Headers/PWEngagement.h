@@ -15,7 +15,7 @@
 #import <PWEngagement/PWMELocalNotification.h>
 #import <PWEngagement/PWMEAttributeManager.h>
 
-static NSString *const PWEngagementVersion = @"3.4.1";
+static NSString *const PWEngagementVersion = @"3.4.2";
 
 /**
  The message identifier key which may be included in the notification's userInfo dictionary.

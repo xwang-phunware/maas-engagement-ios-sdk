@@ -1,4 +1,11 @@
 # PWEngagement Changelog
+## 3.4.2 (Thursday, May 31st, 2018)
+#### Features
+* Update to PWCore 3.6.x
+
+#### Bug fixes / performance enhancements
+* Fixed OS timing issue on first app launch geofence entry
+
 ## 3.4.1 (Monday, May 21st, 2018)
 #### Bug fixes / performance enhancements
 * Fixed first app launch missed notifications
