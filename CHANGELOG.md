@@ -1,4 +1,8 @@
 # PWEngagement Changelog
+## 3.4.3 (Thursday, June 14th, 2018)
+#### Bug fixes / performance enhancements
+* Fixed crash when opening broadcast from an inactive state
+
 ## 3.4.2 (Thursday, May 31st, 2018)
 #### Features
 * Update to PWCore 3.6.x
