@@ -7,6 +7,7 @@
 
 #import "AppInfoViewController.h"
 #import <PWEngagement/PWMEGeozone.h>
+#import <PWCore/PWLogger.h>
 
 #import "PWEngagement+Helper.h"
 
@@ -52,6 +53,10 @@ static NSString *const MaxMonitorRegionRadius = @"50,000";
     [super viewWillAppear:animated];
     
     [self updateUI:nil];
+}
+
+- (IBAction)emailLogsTapped:(UIBarButtonItem *)sender {
+    [PWLogger emailLogs];
 }
 
 #pragma mark - Internal
