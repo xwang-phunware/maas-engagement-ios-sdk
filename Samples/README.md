@@ -8,13 +8,13 @@ PWEngagement Samples for iOS
 - Display monitored geofences
 - Manage messages in message center
 
-## MapScenarios
+## EngagementScenarios
 
 ### Overview
 - Each use case requires setup in the AppDelegate but provides specific examples in the individual view controllers
 
 ### LocalNotificationHandlerViewController
-- Provides an local notification handler allowing app to intercept and choose to display a custom notification
+- Provides a local notification handler allowing app to intercept and choose to display a custom notification
 
 ##### Usage:
 - Fill out `applicationId`, `accessKey`, and `signatureKey` in app delegate
