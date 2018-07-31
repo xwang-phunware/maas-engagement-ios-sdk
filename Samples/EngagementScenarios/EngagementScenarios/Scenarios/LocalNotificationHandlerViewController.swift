@@ -2,7 +2,7 @@
 //  LocalNotificationHandlerViewController.swift
 //  EngagementScenarios
 //
-//  Created by Chesley Stephens on 7/30/18.
+//  Created on 7/30/18.
 //  Copyright © 2018 Phunware. All rights reserved.
 //
 
