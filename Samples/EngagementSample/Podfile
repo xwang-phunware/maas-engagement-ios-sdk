@@ -1,9 +1,9 @@
 source 'ssh://git@github.com/CocoaPods/Specs.git'
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 xcodeproj 'EngagementSample.xcodeproj'
 
 target :'EngagementSample' do
-  pod 'PWEngagement', '~> 3.4.0'
+  pod 'PWEngagement', '~> 3.5.0'
   pod 'MBProgressHUD'
 end
