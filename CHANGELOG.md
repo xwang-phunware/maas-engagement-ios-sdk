@@ -1,4 +1,8 @@
 # PWEngagement Changelog
+## 3.5.0 (Monday, Aug 13th, 2018)
+* iOS deployment target increased from 9.0 to 10.0
+* Fix device update token call
+
 ## 3.4.3 (Thursday, June 14th, 2018)
 #### Bug fixes / performance enhancements
 * Fixed crash when opening broadcast from an inactive state

@@ -1,7 +1,7 @@
 Engagement SDK for iOS
 ==================
 
-Version 3.4.3
+Version 3.5.0
 
 Overview
 ------------
@@ -11,7 +11,7 @@ Requirements
 ------------
 
 - PWCore 3.6.x
-- iOS 9.0 or greater
+- iOS 10.0 or greater
 - Xcode 8 or greater
 
 Documentation
