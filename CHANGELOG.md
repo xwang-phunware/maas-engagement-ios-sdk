@@ -1,27 +1,7 @@
 # PWEngagement Changelog
-## 3.4.4 (Tuesday, Auguest 28th, 2018)
-#### Bug fixes / performance enhancements
+## 3.3.3 (Tuesday, Aug 28th, 2018)
+#### Bug fixes
 * Fixed crash on iOS 12
-
-## 3.4.3 (Thursday, June 14th, 2018)
-#### Bug fixes / performance enhancements
-* Fixed crash when opening broadcast from an inactive state
-
-## 3.4.2 (Thursday, May 31st, 2018)
-#### Features
-* Update to PWCore 3.6.x
-
-#### Bug fixes / performance enhancements
-* Fixed OS timing issue on first app launch geofence entry
-
-## 3.4.1 (Monday, May 21st, 2018)
-#### Bug fixes / performance enhancements
-* Fixed first app launch missed notifications
-
-## 3.4.0 (Monday, May 7th, 2018)
-#### Features
-* Removed location and push notification permission prompting
-* Update to PWCore 3.5.x
 
 ## 3.3.2 (Monday, Apr 16th, 2018)
 #### Features
