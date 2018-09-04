@@ -1,7 +1,7 @@
 Engagement SDK for iOS
 ==================
 
-Version 3.3.3
+Version 3.3.4
 
 Overview
 ------------

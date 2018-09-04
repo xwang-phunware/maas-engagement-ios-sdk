@@ -1,4 +1,8 @@
 # PWEngagement Changelog
+## 3.3.4 (Tuesday, Sep 4th, 2018)
+#### Bug fixes
+* Revert minimum deployment target back to iOS 9
+
 ## 3.3.3 (Tuesday, Aug 28th, 2018)
 #### Bug fixes
 * Fixed crash on iOS 12
