@@ -1,7 +1,7 @@
 Engagement SDK for iOS
 ==================
 
-Version 3.3.4
+Version 3.4.5
 
 Overview
 ------------
@@ -10,7 +10,7 @@ This is Phunware's iOS SDK for Mobile Engagement, a location and notification-ba
 Requirements
 ------------
 
-- PWCore 3.4.x
+- PWCore 3.6.x
 - iOS 9.0 or greater
 - Xcode 8 or greater
 
@@ -20,6 +20,12 @@ Framework documentation is included in the the repository's Documents folder in 
 
 - [API Reference](http://phunware.github.io/maas-engagement-ios-sdk/)
 - Documentation can be found at [developer.phunware.com](https://developer.phunware.com/pages/viewpage.action?pageId=3409591)
+
+**Important Note:** To align with best practices, PWEngagement no longer prompts for notification nor location permissions, leaving control to the app developer. For PWEngagement to fully function as designed, both permissions must be granted.
+
+* Notification permission: We recommend following [Apple's best practices](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html). If permission is not granted the app will not receive push notifications.
+
+* Location permission: To function as designed, PWEngagement needs the user to “Always Allow” location in order to properly search for Geofences activity in the background. We recommend following [Apple's best practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization?language=objc) when asking for this permission. If “Only when in use” or “Don’t allow” is chosen, the app will not monitor for regions. Therefore it will not receive geofence notifications or range on beacons.
 
 Steps to run the sample app
 ------------
