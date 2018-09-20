@@ -6,6 +6,10 @@
 #### Bug fixes / performance enhancements
 * Capability to unset all profile attributes by passing a nil dictionary
 
+## 3.5.1 (Monday, Aug 27th, 2018)
+#### Bug fixes / performance enhancements
+* Fix crash on iOS 12
+
 ## 3.5.0 (Monday, Aug 13th, 2018)
 #### Bug fixes / performance enhancements
 * iOS deployment target increased from 9.0 to 10.0
