@@ -67,7 +67,7 @@
 			<Parameters>
 				<Parameter>
 					<Name>attributes</Name>
-					<Abstract type="html">The attributes that you would like to associate with the device. This parameter cannot be nil.</Abstract>
+					<Abstract type="html">The attributes that you would like to associate with the device.</Abstract>
 				</Parameter><Parameter>
 					<Name>completion</Name>
 					<Abstract type="html">A block that will be executed after the update is complete.</Abstract>

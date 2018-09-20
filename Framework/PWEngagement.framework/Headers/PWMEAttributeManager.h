@@ -61,7 +61,7 @@ typedef void (^PWFetchCustomIdentifierBlock)(NSString *identifier, NSError *erro
 
 /**
  Update profile attributes to be associated with the device.
- @param attributes The attributes that you would like to associate with the device. This parameter cannot be `nil`.
+ @param attributes The attributes that you would like to associate with the device. 
  @param completion A block that will be executed after the update is complete.
  @discussion All attributes that you wish to be associated with this device must be in the `attributes` dictionary. Any items omitted will be removed.
  */

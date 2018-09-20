@@ -1,11 +1,15 @@
 # PWEngagement Changelog
-## 3.4.5 (Tuesday, Sep 4th, 2018)
-#### Bug fixes / performance enhancements
-* Revert minimum deployment target back to iOS 9
+## 3.6.0 (Thursday, Sep 20th, 2018)
+#### Features
+* Add When-In-Use location permission support
 
-## 3.4.4 (Tuesday, August 28th, 2018)
 #### Bug fixes / performance enhancements
-* Fixed crash on iOS 12
+* Capability to unset all profile attributes by passing a nil dictionary
+
+## 3.5.0 (Monday, Aug 13th, 2018)
+#### Bug fixes / performance enhancements
+* iOS deployment target increased from 9.0 to 10.0
+* Fix device update token call
 
 ## 3.4.3 (Thursday, June 14th, 2018)
 #### Bug fixes / performance enhancements

@@ -14,10 +14,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setAlertTitle:</TokenIdentifier>
-			<Abstract type="html">Returns the alert title of this message. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the alert title of this message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *alertTitle</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *alertTitle</Declaration>
 			
 			<ReturnValue><Abstract type="html">The alert title of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/alertTitle</Anchor>
@@ -26,10 +26,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/alertTitle</TokenIdentifier>
-			<Abstract type="html">Returns the alert title of this message. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the alert title of this message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *alertTitle</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *alertTitle</Declaration>
 			
 			<ReturnValue><Abstract type="html">The alert title of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/alertTitle</Anchor>
@@ -38,10 +38,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/alertTitle</TokenIdentifier>
-			<Abstract type="html">Returns the alert title of this message. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the alert title of this message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *alertTitle</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *alertTitle</Declaration>
 			
 			<ReturnValue><Abstract type="html">The alert title of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/alertTitle</Anchor>
@@ -50,10 +50,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setAlertBody:</TokenIdentifier>
-			<Abstract type="html">Returns the alert body of this message. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the alert body of this message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *alertBody</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *alertBody</Declaration>
 			
 			<ReturnValue><Abstract type="html">The alert body of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/alertBody</Anchor>
@@ -62,10 +62,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/alertBody</TokenIdentifier>
-			<Abstract type="html">Returns the alert body of this message. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the alert body of this message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *alertBody</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *alertBody</Declaration>
 			
 			<ReturnValue><Abstract type="html">The alert body of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/alertBody</Anchor>
@@ -74,10 +74,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/alertBody</TokenIdentifier>
-			<Abstract type="html">Returns the alert body of this message. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the alert body of this message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *alertBody</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *alertBody</Declaration>
 			
 			<ReturnValue><Abstract type="html">The alert body of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/alertBody</Anchor>
@@ -86,10 +86,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setPromotionTitle:</TokenIdentifier>
-			<Abstract type="html">Returns the promotion title of this message. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the promotion title of this message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *promotionTitle</Declaration>
+			<Declaration>@property (readonly, nullable) NSString *promotionTitle</Declaration>
 			
 			<ReturnValue><Abstract type="html">The promotion title of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/promotionTitle</Anchor>
@@ -98,10 +98,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/promotionTitle</TokenIdentifier>
-			<Abstract type="html">Returns the promotion title of this message. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the promotion title of this message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *promotionTitle</Declaration>
+			<Declaration>@property (readonly, nullable) NSString *promotionTitle</Declaration>
 			
 			<ReturnValue><Abstract type="html">The promotion title of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/promotionTitle</Anchor>
@@ -110,10 +110,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/promotionTitle</TokenIdentifier>
-			<Abstract type="html">Returns the promotion title of this message. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the promotion title of this message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *promotionTitle</Declaration>
+			<Declaration>@property (readonly, nullable) NSString *promotionTitle</Declaration>
 			
 			<ReturnValue><Abstract type="html">The promotion title of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/promotionTitle</Anchor>
@@ -122,10 +122,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/setPromotionBody:</TokenIdentifier>
-			<Abstract type="html">Returns the promotion body of this message. The value returned by this method is usually HTML. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the promotion body of this message. The value returned by this method is usually HTML.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *promotionBody</Declaration>
+			<Declaration>@property (readonly, nullable) NSString *promotionBody</Declaration>
 			
 			<ReturnValue><Abstract type="html">The body of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/promotionBody</Anchor>
@@ -134,10 +134,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PWMEZoneMessage/promotionBody</TokenIdentifier>
-			<Abstract type="html">Returns the promotion body of this message. The value returned by this method is usually HTML. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the promotion body of this message. The value returned by this method is usually HTML.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *promotionBody</Declaration>
+			<Declaration>@property (readonly, nullable) NSString *promotionBody</Declaration>
 			
 			<ReturnValue><Abstract type="html">The body of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/promotionBody</Anchor>
@@ -146,10 +146,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PWMEZoneMessage/promotionBody</TokenIdentifier>
-			<Abstract type="html">Returns the promotion body of this message. The value returned by this method is usually HTML. This property will never return a nil value.</Abstract>
+			<Abstract type="html">Returns the promotion body of this message. The value returned by this method is usually HTML.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *promotionBody</Declaration>
+			<Declaration>@property (readonly, nullable) NSString *promotionBody</Declaration>
 			
 			<ReturnValue><Abstract type="html">The body of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/promotionBody</Anchor>
@@ -161,7 +161,7 @@
 			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSDictionary *metaData</Declaration>
+			<Declaration>@property (readonly, nonnull) NSDictionary *metaData</Declaration>
 			
 			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/metaData</Anchor>
@@ -173,7 +173,7 @@
 			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSDictionary *metaData</Declaration>
+			<Declaration>@property (readonly, nonnull) NSDictionary *metaData</Declaration>
 			
 			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/metaData</Anchor>
@@ -185,7 +185,7 @@
 			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSDictionary *metaData</Declaration>
+			<Declaration>@property (readonly, nonnull) NSDictionary *metaData</Declaration>
 			
 			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/metaData</Anchor>
@@ -197,7 +197,7 @@
 			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *identifier</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *identifier</Declaration>
 			
 			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
 			<Anchor>//api/name/identifier</Anchor>
@@ -209,7 +209,7 @@
 			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *identifier</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *identifier</Declaration>
 			
 			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
 			<Anchor>//api/name/identifier</Anchor>
@@ -221,7 +221,7 @@
 			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *identifier</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *identifier</Declaration>
 			
 			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
 			<Anchor>//api/name/identifier</Anchor>
@@ -269,7 +269,7 @@
 			<Abstract type="html">A string containing the campaign type of the message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *campaignType</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *campaignType</Declaration>
 			
 			<ReturnValue><Abstract type="html">A string containing the campaign type of the message.</Abstract></ReturnValue>
 			<Anchor>//api/name/campaignType</Anchor>
@@ -281,7 +281,7 @@
 			<Abstract type="html">A string containing the campaign type of the message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *campaignType</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *campaignType</Declaration>
 			
 			<ReturnValue><Abstract type="html">A string containing the campaign type of the message.</Abstract></ReturnValue>
 			<Anchor>//api/name/campaignType</Anchor>
@@ -293,7 +293,7 @@
 			<Abstract type="html">A string containing the campaign type of the message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSString *campaignType</Declaration>
+			<Declaration>@property (readonly, nonnull) NSString *campaignType</Declaration>
 			
 			<ReturnValue><Abstract type="html">A string containing the campaign type of the message.</Abstract></ReturnValue>
 			<Anchor>//api/name/campaignType</Anchor>
@@ -305,7 +305,7 @@
 			<Abstract type="html">Returns the timestamp identifying when the message is saved.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSDate *timestamp</Declaration>
+			<Declaration>@property (readonly, nonnull) NSDate *timestamp</Declaration>
 			
 			<ReturnValue><Abstract type="html">the timestamp identifying when the message is saved.</Abstract></ReturnValue>
 			<Anchor>//api/name/timestamp</Anchor>
@@ -317,7 +317,7 @@
 			<Abstract type="html">Returns the timestamp identifying when the message is saved.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSDate *timestamp</Declaration>
+			<Declaration>@property (readonly, nonnull) NSDate *timestamp</Declaration>
 			
 			<ReturnValue><Abstract type="html">the timestamp identifying when the message is saved.</Abstract></ReturnValue>
 			<Anchor>//api/name/timestamp</Anchor>
@@ -329,7 +329,7 @@
 			<Abstract type="html">Returns the timestamp identifying when the message is saved.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly) NSDate *timestamp</Declaration>
+			<Declaration>@property (readonly, nonnull) NSDate *timestamp</Declaration>
 			
 			<ReturnValue><Abstract type="html">the timestamp identifying when the message is saved.</Abstract></ReturnValue>
 			<Anchor>//api/name/timestamp</Anchor>

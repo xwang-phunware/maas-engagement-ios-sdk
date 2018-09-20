@@ -33,48 +33,46 @@ static NSString *const PWMEZoneMessageOnDemandBroadCastCampaignType = @"ON_DEMAN
 
 
 /**
- Returns the alert title of this message. This property will never return a `nil` value.
+ Returns the alert title of this message.
  @return The alert title of this message.
  */
-@property (readonly) NSString *alertTitle;
+@property (readonly, nonnull) NSString *alertTitle;
 
 
 /**
- Returns the alert body of this message. This property will never return a `nil` value.
+ Returns the alert body of this message.
  @return The alert body of this message.
  */
-@property (readonly) NSString *alertBody;
+@property (readonly, nonnull) NSString *alertBody;
 
 
 /**
- Returns the promotion title of this message. This property will never return a `nil` value.
+ Returns the promotion title of this message.
  @return The promotion title of this message.
  */
-@property (readonly) NSString *promotionTitle;
+@property (readonly, nullable) NSString *promotionTitle;
 
 
 /**
- Returns the promotion body of this message. The value returned by this method is usually HTML. This property will never return a `nil` value.
+ Returns the promotion body of this message. The value returned by this method is usually HTML.
  @discussion  To mark this message as read, pass this message to the `PWMEZoneMessageManager` `readMessage:` method.
  @return The body of this message.
  */
-@property (readonly) NSString *promotionBody;
+@property (readonly, nullable) NSString *promotionBody;
 
 
 /**
  Returns the metadata associated with the message.
- @discussion This property will never return a `nil` value.. It will return an empty `NSDictionary` object if there is no metadata associated with the message.
- 
  @return Returns the metadata of this message.
  */
-@property (readonly) NSDictionary *metaData;
+@property (readonly, nonnull) NSDictionary *metaData;
 
 /**
  Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.
- @discussion There can be at most one message associated with a campaign at any given time. This property will never return a `nil` value.
+ @discussion There can be at most one message associated with a campaign at any given time.
  @return The internal unique identifier message.
  */
-@property (readonly) NSString *identifier;
+@property (readonly, nonnull) NSString *identifier;
 
 /**
  A Boolean value indicating whether or not the entry is read.
@@ -87,13 +85,13 @@ static NSString *const PWMEZoneMessageOnDemandBroadCastCampaignType = @"ON_DEMAN
  A string containing the campaign type of the message.
  @return A string containing the campaign type of the message.
  */
-@property (readonly) NSString *campaignType;
+@property (readonly, nonnull) NSString *campaignType;
 
 /**
  Returns the timestamp identifying when the message is saved.
  @return the timestamp identifying when the message is saved.
  */
-@property (readonly) NSDate *timestamp;
+@property (readonly, nonnull) NSDate *timestamp;
 
 /**
  Deletes this message.

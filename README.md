@@ -1,7 +1,7 @@
 Engagement SDK for iOS
 ==================
 
-Version 3.4.5
+Version 3.6.0
 
 Overview
 ------------
@@ -10,8 +10,8 @@ This is Phunware's iOS SDK for Mobile Engagement, a location and notification-ba
 Requirements
 ------------
 
-- PWCore 3.6.x
-- iOS 9.0 or greater
+- PWCore 3.7.x
+- iOS 10.0 or greater
 - Xcode 8 or greater
 
 Documentation
@@ -25,7 +25,14 @@ Framework documentation is included in the the repository's Documents folder in 
 
 * Notification permission: We recommend following [Apple's best practices](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/SupportingNotificationsinYourApp.html). If permission is not granted the app will not receive push notifications.
 
-* Location permission: To function as designed, PWEngagement needs the user to “Always Allow” location in order to properly search for Geofences activity in the background. We recommend following [Apple's best practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization?language=objc) when asking for this permission. If “Only when in use” or “Don’t allow” is chosen, the app will not monitor for regions. Therefore it will not receive geofence notifications or range on beacons.
+* Location permission: To perform optimally, PWEngagement needs the user to “Always Allow” location in order to properly search for Geofences activity in the background. We recommend following [Apple's best practices](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/requesting_always_authorization?language=objc) when asking for this permission. If “Only when in use” or “Don’t allow” is chosen, the app will not monitor for regions in the background. Therefore it will not receive geofence notifications or range on beacons in the background.
+  * PWEngagement supports "Only when in use" for limited functionality as of PWEngagement 3.6.0. When the application is in the foreground with "Only when in use" permission, PWEngagement will deliver geofence and beacon campaigns as intended.
+
+* Background modes: PWEngagement requires several different background capabilities, which may be enabled by navigating to your project's target's settings under `Capabilities` then `Background Modes`.
+  * Location Updates: Required for region monitoring in background.
+  * Uses Bluetooth LE accessories: Required to receive beacon campaigns.
+  * Background fetch: Required to react to background location updates appropriately.
+  * Remote notifications: Required to receive APNs notifications in background.
 
 Steps to run the sample app
 ------------

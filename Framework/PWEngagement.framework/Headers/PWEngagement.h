@@ -15,7 +15,7 @@
 #import <PWEngagement/PWMELocalNotification.h>
 #import <PWEngagement/PWMEAttributeManager.h>
 
-static NSString *const PWEngagementVersion = @"3.4.5";
+static NSString *const PWEngagementVersion = @"3.6.0";
 
 /**
  The message identifier key which may be included in the notification's userInfo dictionary.
@@ -93,11 +93,6 @@ extern NSString *const PWMELocationServiceReadyNotificationKey;
 extern NSString *const PWMEMonitoredGeoZoneChangesNotificationKey;
 
 /**
- * Posted when didChangeAuthorizationStatus is called with kCLAuthorizationStatusAuthorizedWhenInUse status.
- */
-extern NSString *const PWEngagementWhenInUseAuthorizationNotificationKey;
-
-/**
  * The mobile engagement framework is a location and notification based system.
  *
  * The recommended way to start mobile engagement in your application is to place a call
@@ -141,12 +136,12 @@ extern NSString *const PWEngagementWhenInUseAuthorizationNotificationKey;
 /**
  * All the available `PWMEGeozone` list.
  */
-+ (NSArray *)geozones;
++ (NSArray<PWMEGeozone *> *)geozones;
 
 /**
  * All the available `PWMEZoneMessage` list.
  */
-+ (NSArray *)messages;
++ (NSArray<PWMEZoneMessage *> *)messages;
 
 /**
  * Return the device identifier which the mobile engagement service uses.
@@ -205,27 +200,26 @@ extern NSString *const PWEngagementWhenInUseAuthorizationNotificationKey;
 
 /**
  * Lets the mobile engagement service know that the app receives a local notification, so that it can process it internally.
- * @discussion The message deep linking could be fired from the `completion` block.
+ * @discussion The message deep linking could be fired from the `completion` block. This method is deprecated since iOS 10, please use `didReceiveNotification:withNotificationHandler:` instead.
  * @param notification A `UILocalNotification` object.
  * @param notificationHandler A block that tells the notification with message which was received.
- *
  *      - *notification* The notification object which was received.
  */
-+ (void)didReceiveLocalNotification:(UILocalNotification *)notification withNotificationHandler:(void(^)(PWMELocalNotification *notification))notificationHandler;
++ (void)didReceiveLocalNotification:(UILocalNotification *)notification withNotificationHandler:(void(^)(PWMELocalNotification *notification))notificationHandler __deprecated;
 
 /**
  * Lets the mobile engagement service know that the app receives a remote notification, so that it can process it internally.
- * @discussion The message deep linking could be fired from the `notificationHandler` block.
+ * @discussion The message deep linking could be fired from the `notificationHandler` block. This method is deprecated since iOS 10, please use `didReceiveNotification:withNotificationHandler:` instead.
  * @param userInfo A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an NSDictionary object; the dictionary may contain only property-list objects plus NSNull.
  * @param notificationHandler A block that tells the notification with message which was received.
  *
  *      - *notification* The notification object which was received.
  */
-+ (void)didReceiveRemoteNotification:(NSDictionary *)userInfo withNotificationHandler:(void(^)(PWMELocalNotification *notification))notificationHandler;
++ (void)didReceiveRemoteNotification:(NSDictionary *)userInfo withNotificationHandler:(void(^)(PWMELocalNotification *notification))notificationHandler __deprecated;
 
 /**
  * Lets the mobile engagement service know that the app receives a remote notification, so that it can process it internally.
- * @discussion The message deep linking could be fired from the `notificationHandler` block.
+ * @discussion The message deep linking could be fired from the `notificationHandler` block. This method is deprecated since iOS 10, please use `didReceiveNotification:withNotificationHandler:` instead.
  * @param userInfo A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an NSDictionary object; the dictionary may contain only property-list objects plus NSNull. 
  * @param completionHandler The block to execute when the download operation is complete. When calling this block, pass in the fetch result value that best describes the results of your download operation. You must call this handler and should do so as soon as possible. For a list of possible values, see the UIBackgroundFetchResult type.
  *
@@ -234,7 +228,15 @@ extern NSString *const PWEngagementWhenInUseAuthorizationNotificationKey;
  *
  *      - *notification*: The notification object which was received.
  */
-+ (void)didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler  withNotificationHandler:(void(^)(PWMELocalNotification *notification))notificationHandler;
++ (void)didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler withNotificationHandler:(void(^)(PWMELocalNotification *notification))notificationHandler __deprecated;
+
+/**
+ * Lets the mobile engagement service know that the app receives a notification, so that it can process it internally, typically when you receive a notification in `application:didReceiveRemoteNotification:fetchCompletionHandler:`, `userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:` and `userNotificationCenter:willPresentNotification:withCompletionHandler:`.
+ * @param userInfo A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an NSDictionary object; the dictionary may contain only property-list objects plus NSNull.
+ * @param completion A block that returns the notification with the received message or error.
+ * @discussion The message deep linking could be fired from the `notificationHandler` block.
+ */
++ (void)didReceiveNotification:(NSDictionary *)userInfo withCompletion:(void(^)(PWMEZoneMessage *message, NSError *error))completion;
 
 /**
  * Set the static identifier to be registered with the current device.
@@ -243,7 +245,6 @@ extern NSString *const PWEngagementWhenInUseAuthorizationNotificationKey;
  * @param completion The block that notifies the user when static identifier registration is complete, and whether or not there was an error on the registration request.
  */
 + (void)setStaticIdentifier:(NSString *)staticIdentifier completion:(void(^)(NSError *error))completion;
-
 
 /**
  * This method has been deprecated.
