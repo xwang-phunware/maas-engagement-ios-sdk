@@ -1,14 +1,19 @@
 # PWEngagement Changelog
+## 3.6.1 (Tuesday, Oct 16th, 2018)
+#### Features
+* Add metadata parsing for on demand broadcasts
+
+#### Bug fixes / performance enhancements
+* Fix incorrect campaign type for different broadcasts
+* Improve load time for broadcast with promotion data
+* Fix crash when opening broadcast from a inactive state
+
 ## 3.6.0 (Thursday, Sep 20th, 2018)
 #### Features
 * Add When-In-Use location permission support
 
 #### Bug fixes / performance enhancements
 * Capability to unset all profile attributes by passing a nil dictionary
-
-## 3.5.1 (Monday, Aug 27th, 2018)
-#### Bug fixes / performance enhancements
-* Fix crash on iOS 12
 
 ## 3.5.0 (Monday, Aug 13th, 2018)
 #### Bug fixes / performance enhancements

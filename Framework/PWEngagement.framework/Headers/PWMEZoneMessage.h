@@ -65,14 +65,14 @@ static NSString *const PWMEZoneMessageOnDemandBroadCastCampaignType = @"ON_DEMAN
  Returns the metadata associated with the message.
  @return Returns the metadata of this message.
  */
-@property (readonly, nonnull) NSDictionary *metaData;
+@property (readonly, nonnull) NSDictionary <NSString *, id> *metaData;
 
 /**
  Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.
  @discussion There can be at most one message associated with a campaign at any given time.
  @return The internal unique identifier message.
  */
-@property (readonly, nonnull) NSString *identifier;
+@property (readonly, nullable) NSString *identifier;
 
 /**
  A Boolean value indicating whether or not the entry is read.
@@ -91,7 +91,7 @@ static NSString *const PWMEZoneMessageOnDemandBroadCastCampaignType = @"ON_DEMAN
  Returns the timestamp identifying when the message is saved.
  @return the timestamp identifying when the message is saved.
  */
-@property (readonly, nonnull) NSDate *timestamp;
+@property (readonly, nullable) NSDate *timestamp;
 
 /**
  Deletes this message.

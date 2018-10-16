@@ -161,7 +161,7 @@
 			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly, nonnull) NSDictionary *metaData</Declaration>
+			<Declaration>@property (readonly, nonnull) NSDictionary&lt;NSString*id&gt; *metaData</Declaration>
 			
 			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/metaData</Anchor>
@@ -173,7 +173,7 @@
 			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly, nonnull) NSDictionary *metaData</Declaration>
+			<Declaration>@property (readonly, nonnull) NSDictionary&lt;NSString*id&gt; *metaData</Declaration>
 			
 			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/metaData</Anchor>
@@ -185,7 +185,7 @@
 			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly, nonnull) NSDictionary *metaData</Declaration>
+			<Declaration>@property (readonly, nonnull) NSDictionary&lt;NSString*id&gt; *metaData</Declaration>
 			
 			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
 			<Anchor>//api/name/metaData</Anchor>
@@ -197,7 +197,7 @@
 			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly, nonnull) NSString *identifier</Declaration>
+			<Declaration>@property (readonly, nullable) NSString *identifier</Declaration>
 			
 			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
 			<Anchor>//api/name/identifier</Anchor>
@@ -209,7 +209,7 @@
 			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly, nonnull) NSString *identifier</Declaration>
+			<Declaration>@property (readonly, nullable) NSString *identifier</Declaration>
 			
 			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
 			<Anchor>//api/name/identifier</Anchor>
@@ -221,7 +221,7 @@
 			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly, nonnull) NSString *identifier</Declaration>
+			<Declaration>@property (readonly, nullable) NSString *identifier</Declaration>
 			
 			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
 			<Anchor>//api/name/identifier</Anchor>
@@ -305,7 +305,7 @@
 			<Abstract type="html">Returns the timestamp identifying when the message is saved.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly, nonnull) NSDate *timestamp</Declaration>
+			<Declaration>@property (readonly, nullable) NSDate *timestamp</Declaration>
 			
 			<ReturnValue><Abstract type="html">the timestamp identifying when the message is saved.</Abstract></ReturnValue>
 			<Anchor>//api/name/timestamp</Anchor>
@@ -317,7 +317,7 @@
 			<Abstract type="html">Returns the timestamp identifying when the message is saved.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly, nonnull) NSDate *timestamp</Declaration>
+			<Declaration>@property (readonly, nullable) NSDate *timestamp</Declaration>
 			
 			<ReturnValue><Abstract type="html">the timestamp identifying when the message is saved.</Abstract></ReturnValue>
 			<Anchor>//api/name/timestamp</Anchor>
@@ -329,7 +329,7 @@
 			<Abstract type="html">Returns the timestamp identifying when the message is saved.</Abstract>
 			<DeclaredIn>PWMEZoneMessage.h</DeclaredIn>
 			
-			<Declaration>@property (readonly, nonnull) NSDate *timestamp</Declaration>
+			<Declaration>@property (readonly, nullable) NSDate *timestamp</Declaration>
 			
 			<ReturnValue><Abstract type="html">the timestamp identifying when the message is saved.</Abstract></ReturnValue>
 			<Anchor>//api/name/timestamp</Anchor>
