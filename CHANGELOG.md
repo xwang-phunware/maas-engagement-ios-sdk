@@ -1,4 +1,8 @@
 # PWEngagement Changelog
+## 3.7.0 (Wednesday, November 14th, 2018)
+#### Features
+* Update for PWCore 3.8.x compatibility using new automatic screen view analytic events and simplified custom event creation.
+
 ## 3.6.1 (Tuesday, Oct 16th, 2018)
 #### Features
 * Add metadata parsing for on demand broadcasts

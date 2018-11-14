@@ -1,7 +1,7 @@
 Engagement SDK for iOS
 ==================
 
-Version 3.6.1
+Version 3.7.0
 
 Overview
 ------------
@@ -10,7 +10,7 @@ This is Phunware's iOS SDK for Mobile Engagement, a location and notification-ba
 Requirements
 ------------
 
-- PWCore 3.7.x
+- PWCore 3.8.x
 - iOS 10.0 or greater
 - Xcode 8 or greater
 
