@@ -1,4 +1,8 @@
 # PWEngagement Changelog
+## 3.7.1 (Thursday, November 29th, 2018)
+#### Bug fixes / performance enhancements
+* Update to MistSDK 1.3.0
+
 ## 3.7.0 (Wednesday, November 14th, 2018)
 #### Features
 * Update for PWCore 3.8.x compatibility using new automatic screen view analytic events and simplified custom event creation.
