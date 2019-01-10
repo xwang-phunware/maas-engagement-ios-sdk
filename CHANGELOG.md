@@ -1,4 +1,8 @@
 # PWEngagement Changelog
+## 3.7.2 (Thursday, January 10th, 2019)
+#### Bug fixes / performance enhancements
+* Update to MistSDK 1.4.2
+
 ## 3.7.1 (Thursday, November 29th, 2018)
 #### Bug fixes / performance enhancements
 * Update to MistSDK 1.3.0
