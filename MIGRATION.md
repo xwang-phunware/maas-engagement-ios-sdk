@@ -98,27 +98,27 @@ How to subscribe message/geofence events?
 > 
 > ```
 > public extension NSNotification.Name {
-    /// Enter a geofence
-    static let EnteredGeofence = NSNotification.Name("EnteredGeofence")
-    /// Exit a geofence
-    static let ExitedGeofence = NSNotification.Name("ExitedGeofence")
-    /// Start monitoring geofences
-    static let StartedMonitoringGeofences = NSNotification.Name("StartedMonitoringGeofences")
-    /// Stop monitoring geofences
-    static let StoppedMonitoringGeofences = NSNotification.Name("StoppedMonitoringGeofences")
-    /// Added geofences
-    static let AddedGeofences = NSNotification.Name("AddedGeofences")
-    /// Deleted geofences
-    static let DeletedGeofences = NSNotification.Name("DeletedGeofences")
-    /// Received a message
-    static let ReceivedMessage = NSNotification.Name("ReceivedMessage")
-    /// Read a message
-    static let ReadMessage = NSNotification.Name("ReadMessage")
-    /// Deleted a messgage
-    static let DeletedMessage = NSNotification.Name("DeletedMessage")
-    /// Whenever error occurred
-    static let EngagementError = NSNotification.Name("EngagementError")
-}
+>     /// Enter a geofence
+>     static let EnteredGeofence = NSNotification.Name("EnteredGeofence")
+>     /// Exit a geofence
+>     static let ExitedGeofence = NSNotification.Name("ExitedGeofence")
+>     /// Start monitoring geofences
+>     static let StartedMonitoringGeofences = NSNotification.Name("StartedMonitoringGeofences")
+>     /// Stop monitoring geofences
+>     static let StoppedMonitoringGeofences = NSNotification.Name("StoppedMonitoringGeofences")
+>     /// Added geofences
+>     static let AddedGeofences = NSNotification.Name("AddedGeofences")
+>     /// Deleted geofences
+>     static let DeletedGeofences = NSNotification.Name("DeletedGeofences")
+>     /// Received a message
+>     static let ReceivedMessage = NSNotification.Name("ReceivedMessage")
+>     /// Read a message
+>     static let ReadMessage = NSNotification.Name("ReadMessage")
+>     /// Deleted a messgage
+>     static let DeletedMessage = NSNotification.Name("DeletedMessage")
+>     /// Whenever error occurred
+>     static let EngagementError = NSNotification.Name("EngagementError")
+> }
 > ```
 
 How to get all geofences?
