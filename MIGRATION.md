@@ -10,7 +10,7 @@ PWEngagement v4.0.0 is rewriten by swift and many APIs are changed to be more sw
 
 1. Open the `Podfile` from your project and change PWEngagement to include `pod 'PWEngagement', '4.0.0'`, then run `pod update` in the Terminal to update the framework.
 
-2. Check out the [migration guide](https://github.com/phunware/maas-core-ios-sdk/blob/master/MIGRATION.md) for PWCore 4.0.0 upgrade.
+2. Check out the [migration guide](https://github.com/phunware/maas-core-ios-sdk/blob/master/MIGRATION.md) for PWCore 4.0.0 migration.
 
 3. You may need to make changes in **AppDelegate.swift**.
 	
@@ -40,7 +40,7 @@ PWEngagement v4.0.0 is rewriten by swift and many APIs are changed to be more sw
     }
 	````
 	
-	* [Request user notification authorization](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter), we recomment doing it from **application(_: willFinishLaunchingWithOptions:)** method. 
+	* [Request user notification authorization](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter), we recommend doing so in the **application(_: willFinishLaunchingWithOptions:)** method. 
 
 	> It's not required, you can just keep what you done with `UNUserNotificationCenter` to handle the user notificaiton.
 	
@@ -68,9 +68,9 @@ PWEngagement v4.0.0 is rewriten by swift and many APIs are changed to be more sw
 	````
 	func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         PWEngagement.retrieveMessage(with: notification.request.content.userInfo) { [weak self] (message, error) in
-            // TODO... show the notification when app is running in the foreground.
+            // TODO... you may need add code here to show the notification when app is running in the foreground.
             
-            // Complete the handler by poping a alert or something
+            // Complete the handler
             completionHandler(.alert)
         }
     }
@@ -81,7 +81,7 @@ PWEngagement v4.0.0 is rewriten by swift and many APIs are changed to be more sw
         }
         
         PWEngagement.retrieveMessage(with: userInfo) { [weak self] (message, error) in
-            // TODO... deep linking implementation
+            // TODO... you may need add deep linking implementation here
         }
         completionHandler()
     }
