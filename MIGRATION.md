@@ -1,4 +1,145 @@
 # PWEngagement Migration Guide
+
+## Upgrade from 3.x to 4.0.0
+
+#### General
+
+PWEngagement v4.0.0 is rewriten by swift and many APIs are changed to be more swiftable. 
+
+#### Upgrade Steps
+
+1. Open the `Podfile` from your project and change PWEngagement to include `pod 'PWEngagement', '4.0.0'`, then run `pod update` in the Terminal to update the framework.
+
+2. Check out the [migration guide](https://github.com/phunware/maas-core-ios-sdk/blob/master/MIGRATION.md) for PWCore 4.0.0 upgrade.
+
+3. You may need to make changes in **AppDelegate.swift**.
+	
+	* Configure SDK in **application(_: willFinishLaunchingWithOptions:)** method. 
+	
+	````
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+		...
+		PWEngagement.configure(with: appId, accessKey: accessKey, signatureKey: signatureKey)
+		...
+	}
+	````
+	
+	* Update ANPS token in the **application(_:didRegisterForRemoteNotificationsWithDeviceToken:)** method. 
+
+	````
+	PWEngagement.apnsToken = deviceToken
+	````
+	
+	* Handle incoming remote notification in the **application(_: didReceiveRemoteNotification: fetchCompletionHandler)** method. 
+
+	````
+	PWEngagement.retrieveMessage(with: userInfo) { (message, error) in
+		// You may add code here to do what you want
+		
+   		completionHandler(.newData)
+    }
+	````
+	
+	* [Request user notification authorization](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter), we recomment doing it from **application(_: willFinishLaunchingWithOptions:)** method. 
+
+	> It's not required, you can just keep what you done with `UNUserNotificationCenter` to handle the user notificaiton.
+	
+	````
+	UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            guard granted else {
+                return
+            }
+            
+            UNUserNotificationCenter.current().getNotificationSettings(completionHandler: { (settings) in
+                if settings.authorizationStatus != .authorized {
+                    UIApplication.shared.registerForRemoteNotifications()
+                }
+            })
+        }
+        
+   // Handle incoming notifications and notification-related actions.
+   UNUserNotificationCenter.current().delegate = self
+	````
+	
+	* Handle user notification from **UNUserNotificationCenterDelegate**'s callback methods. 
+
+	> Message deep linking or show incoming message when the app is running in the foreground.
+	
+	````
+	func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        PWEngagement.retrieveMessage(with: notification.request.content.userInfo) { [weak self] (message, error) in
+            // TODO... show the notification when app is running in the foreground.
+            
+            // Complete the handler by poping a alert or something
+            completionHandler(.alert)
+        }
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        guard let userInfo = response.notification.request.content.userInfo as? [String : Any] else {
+            return
+        }
+        
+        PWEngagement.retrieveMessage(with: userInfo) { [weak self] (message, error) in
+            // TODO... deep linking implementation
+        }
+        completionHandler()
+    }
+	````
+	
+#### General Questions
+
+How to subscribe message/geofence events?
+> Two options:
+> 
+> 1) Implement **EngagementDelegate** methods to receive events.
+> 
+> 2) Listen notification by the following names which are defined in Engagement.swift:
+> 
+> ```
+> public extension NSNotification.Name {
+    /// Enter a geofence
+    static let EnteredGeofence = NSNotification.Name("EnteredGeofence")
+    /// Exit a geofence
+    static let ExitedGeofence = NSNotification.Name("ExitedGeofence")
+    /// Start monitoring geofences
+    static let StartedMonitoringGeofences = NSNotification.Name("StartedMonitoringGeofences")
+    /// Stop monitoring geofences
+    static let StoppedMonitoringGeofences = NSNotification.Name("StoppedMonitoringGeofences")
+    /// Added geofences
+    static let AddedGeofences = NSNotification.Name("AddedGeofences")
+    /// Deleted geofences
+    static let DeletedGeofences = NSNotification.Name("DeletedGeofences")
+    /// Received a message
+    static let ReceivedMessage = NSNotification.Name("ReceivedMessage")
+    /// Read a message
+    static let ReadMessage = NSNotification.Name("ReadMessage")
+    /// Deleted a messgage
+    static let DeletedMessage = NSNotification.Name("DeletedMessage")
+    /// Whenever error occurred
+    static let EngagementError = NSNotification.Name("EngagementError")
+}
+> ```
+
+How to get all geofences?
+> Call **PWEngagement.geofences**
+
+How to get all messsages?
+> Call **PWEngagement.messages**
+
+How to get a message by message identifier?
+> Two options:
+> 
+> 1) Call **PWEngagement.message(for:)** for saved message
+> 
+> 2) Call **PWEngagement.retrieveMessage(with:completion:)** for incoming message
+
+How to mark a message as read?
+> Call **PWEngagement.read(messageId)**
+
+How to delete a message?
+> Call **PWEngagement.delete(messageId)**
+
 ## Upgrade from 3.6.x to 3.7.x
 
 #### General
