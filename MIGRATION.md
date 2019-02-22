@@ -89,12 +89,12 @@ PWEngagement v4.0.0 is rewriten by swift and many APIs are changed to be more sw
 	
 #### General Questions
 
-How to subscribe message/geofence events?
+How to subscribe to message/geofence events?
 > Two options:
 > 
 > 1) Implement **EngagementDelegate** methods to receive events.
 > 
-> 2) Listen notification by the following names which are defined in Engagement.swift:
+> 2) Listen to notification with the following names, which are defined in Engagement.swift:
 > 
 > ```
 > public extension NSNotification.Name {
